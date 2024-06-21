@@ -1,31 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2024-06-20T08:33:20.781Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="ARXXOc0RpMSkeOLX6PRa" version="24.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-21T06:11:48.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="Ukhw91iZTntyLYSxP-Ja" version="24.5.5" type="github">
   <diagram name="Page-1" id="9YvXakInj4d-W26BxLXi">
     <mxGraphModel dx="849" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-1" target="LbJiNBoanHTHKZ2yknTd-2">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-1" target="LbJiNBoanHTHKZ2yknTd-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-1" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-1" value="START" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="221.04" y="90" width="85" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-2" target="LbJiNBoanHTHKZ2yknTd-4">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-2" target="LbJiNBoanHTHKZ2yknTd-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-2" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halamn Beranda&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-2" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halamn Beranda&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="216.04" y="175" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-4" target="LbJiNBoanHTHKZ2yknTd-6">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-4" target="LbJiNBoanHTHKZ2yknTd-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-4" value="Info Singkat" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-4" value="Info Singkat" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="216.04" y="240" width="97" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-6" target="LbJiNBoanHTHKZ2yknTd-8">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-6" target="LbJiNBoanHTHKZ2yknTd-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-6" target="LbJiNBoanHTHKZ2yknTd-14">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-6" target="LbJiNBoanHTHKZ2yknTd-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="388.03999999999996" y="490" as="targetPoint" />
             <Array as="points">
@@ -34,31 +34,31 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-6" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Lihat Profile?&lt;/font&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-6" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Lihat Profile?&lt;/font&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="213.04" y="305" width="104" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-8" target="LbJiNBoanHTHKZ2yknTd-14">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-8" target="LbJiNBoanHTHKZ2yknTd-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-8" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Profile&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-8" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Profile&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="217.04" y="388" width="97" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-11" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-11" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="257.03999999999996" y="356" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-14" target="LbJiNBoanHTHKZ2yknTd-21">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-14" target="LbJiNBoanHTHKZ2yknTd-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-14" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Kembali&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Beranda&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-14" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Kembali&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Beranda&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="218.04" y="466" width="96" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-16" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;NO&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-16" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;NO&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="363.03999999999996" y="395" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-21" target="LbJiNBoanHTHKZ2yknTd-23">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-21" target="LbJiNBoanHTHKZ2yknTd-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-21" target="LbJiNBoanHTHKZ2yknTd-40">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-21" target="LbJiNBoanHTHKZ2yknTd-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="118" y="960" as="targetPoint" />
             <Array as="points">
@@ -67,40 +67,40 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-21" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Lihat Artikel&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;lebih?&lt;/font&gt;&lt;/div&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-21" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Lihat Artikel&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;lebih?&lt;/font&gt;&lt;/div&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="211.04" y="529" width="109" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-23" target="LbJiNBoanHTHKZ2yknTd-31">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-23" target="LbJiNBoanHTHKZ2yknTd-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-23" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Artikel&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-23" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Halaman Artikel&lt;/font&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="218.04" y="619" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="257.03999999999996" y="587" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-31" target="LbJiNBoanHTHKZ2yknTd-33">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-31" target="LbJiNBoanHTHKZ2yknTd-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-31" target="LbJiNBoanHTHKZ2yknTd-45">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-31" target="LbJiNBoanHTHKZ2yknTd-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-31" value="Baca Artikel?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-31" value="Baca Artikel?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="215.04" y="690" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-33" target="LbJiNBoanHTHKZ2yknTd-38">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-33" target="LbJiNBoanHTHKZ2yknTd-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-33" value="Halaman Baca&lt;div&gt;Artikel&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-33" value="Halaman Baca&lt;div&gt;Artikel&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="217.04" y="773" width="96" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-37" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-37" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="257.03999999999996" y="738" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-38" target="LbJiNBoanHTHKZ2yknTd-40">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-38" target="LbJiNBoanHTHKZ2yknTd-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-38" target="LbJiNBoanHTHKZ2yknTd-23">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-38" target="LbJiNBoanHTHKZ2yknTd-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="398" y="630" as="targetPoint" />
             <Array as="points">
@@ -109,55 +109,55 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-38" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Baca Artikel&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;lain?&lt;/font&gt;&lt;/div&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-38" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Baca Artikel&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;lain?&lt;/font&gt;&lt;/div&gt;" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="219" y="845" width="91.08" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-40" target="LbJiNBoanHTHKZ2yknTd-48">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-40" target="LbJiNBoanHTHKZ2yknTd-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-40" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Kembali ke&amp;nbsp;&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Beranda&lt;/font&gt;&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-40" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Kembali ke&amp;nbsp;&lt;/font&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Beranda&lt;/font&gt;&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="218" y="928" width="93" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-44" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-44" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="359.04" y="744" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-45" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-45" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="130" y="740" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-46" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-46" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="255.04" y="895" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-48" value="" style="shape=offPageConnector;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-48" value="" style="shape=offPageConnector;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="228.31" y="1024" width="73.46" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-50" target="LbJiNBoanHTHKZ2yknTd-51">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-50" target="LbJiNBoanHTHKZ2yknTd-51" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-50" value="" style="shape=offPageConnector;html=1;size=0.48;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-50" value="" style="shape=offPageConnector;html=1;size=0.48;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="529" y="140" width="73.46" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-51" target="LbJiNBoanHTHKZ2yknTd-53">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-51" target="LbJiNBoanHTHKZ2yknTd-53" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-51" value="Bagian Testimoni" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-51" value="Bagian Testimoni" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="514.78" y="221" width="101.91" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-53" target="LbJiNBoanHTHKZ2yknTd-55">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-53" target="LbJiNBoanHTHKZ2yknTd-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-53" value="Bagian Alamat" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-53" value="Bagian Alamat" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="513.78" y="303.5" width="105.22" height="47.5" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-55" target="LbJiNBoanHTHKZ2yknTd-57">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-55" target="LbJiNBoanHTHKZ2yknTd-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-55" value="Bagian Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-55" value="Bagian Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="514.78" y="381" width="105.22" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-57" target="LbJiNBoanHTHKZ2yknTd-61">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-57" target="LbJiNBoanHTHKZ2yknTd-61" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-57" target="LbJiNBoanHTHKZ2yknTd-71">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-57" target="LbJiNBoanHTHKZ2yknTd-71" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="447" y="840" as="targetPoint" />
             <Array as="points">
@@ -166,27 +166,27 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-83" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" connectable="0" parent="LbJiNBoanHTHKZ2yknTd-80">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-83" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="LbJiNBoanHTHKZ2yknTd-80" vertex="1" connectable="0">
           <mxGeometry x="0.0331" y="1" relative="1" as="geometry">
             <mxPoint x="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-57" value="Daftar?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-57" value="Daftar?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="512" y="454" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-61" target="LbJiNBoanHTHKZ2yknTd-63">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-61" target="LbJiNBoanHTHKZ2yknTd-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-61" value="Halaman Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-61" value="Halaman Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="513" y="556" width="109" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-63" target="LbJiNBoanHTHKZ2yknTd-65">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-63" target="LbJiNBoanHTHKZ2yknTd-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-63" value="Form Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-63" value="Form Daftar" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="514" y="640" width="109" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-65" target="LbJiNBoanHTHKZ2yknTd-63">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-65" target="LbJiNBoanHTHKZ2yknTd-63" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="700.5" y="753.9999999999998" as="targetPoint" />
             <Array as="points">
@@ -195,36 +195,36 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-65" target="LbJiNBoanHTHKZ2yknTd-71">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-65" target="LbJiNBoanHTHKZ2yknTd-71" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-65" value="Berhasil?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-65" value="Berhasil?" style="rhombus;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="514" y="724" width="111" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-70" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-70" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="653" y="693" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-71" target="LbJiNBoanHTHKZ2yknTd-73">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-71" target="LbJiNBoanHTHKZ2yknTd-73" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-71" value="Kembali Ke&amp;nbsp;&lt;div&gt;Beranda&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-71" value="Kembali Ke&amp;nbsp;&lt;div&gt;Beranda&lt;/div&gt;" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="519.5" y="814" width="100.5" height="47" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="LbJiNBoanHTHKZ2yknTd-73" target="LbJiNBoanHTHKZ2yknTd-77">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" source="LbJiNBoanHTHKZ2yknTd-73" target="LbJiNBoanHTHKZ2yknTd-77" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="569.7499999999998" y="965" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-73" value="Bagian Footer" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-73" value="Bagian Footer" style="html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="518.78" y="893" width="102.22" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-77" value="END" style="ellipse;shape=doubleEllipse;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-77" value="END" style="ellipse;shape=doubleEllipse;html=1;strokeWidth=2;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="520" y="968" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-78" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-78" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;textShadow=1;labelBorderColor=none;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="562" y="514" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LbJiNBoanHTHKZ2yknTd-84" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;FLOWCHART&amp;nbsp; WEB COMPANY PROFILE&lt;/font&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&quot; BIMBLE &quot;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;labelBackgroundColor=none;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="LbJiNBoanHTHKZ2yknTd-84" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;FLOWCHART&amp;nbsp; WEB COMPANY PROFILE&lt;/font&gt;&lt;div style=&quot;font-size: 24px;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&quot; BIMBEL &quot;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=24;labelBackgroundColor=none;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="197" y="21" width="480" height="70" as="geometry" />
         </mxCell>
       </root>
