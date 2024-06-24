@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T02:02:25.815Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="uEaLMxL4OZmHeV9x9a-y" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T02:04:27.331Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="eojbaldiklvVKn01R_YZ" version="24.6.2" type="github">
   <diagram name="Page-1" id="n0JQ5T5UX9WoHzskl2IX">
-    <mxGraphModel dx="1744" dy="2759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1911" dy="2864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -182,8 +182,10 @@
         <mxCell id="PCnnhm0pdiqX1yWhsQux-65" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-110" y="-423" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PCnnhm0pdiqX1yWhsQux-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PCnnhm0pdiqX1yWhsQux-66" target="PCnnhm0pdiqX1yWhsQux-69">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="PCnnhm0pdiqX1yWhsQux-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PCnnhm0pdiqX1yWhsQux-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-175.00000000000023" y="-270" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="PCnnhm0pdiqX1yWhsQux-66" value="Admin Memilih Data yang ingin di Hapus" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="-240" y="-340" width="130" height="40" as="geometry" />
@@ -191,11 +193,10 @@
         <mxCell id="PCnnhm0pdiqX1yWhsQux-68" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-102" y="-352" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PCnnhm0pdiqX1yWhsQux-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PCnnhm0pdiqX1yWhsQux-69" target="PCnnhm0pdiqX1yWhsQux-71">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="PCnnhm0pdiqX1yWhsQux-69" value="Konfirmasi penghapusan data" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-240" y="-270" width="130" height="40" as="geometry" />
+        <mxCell id="PCnnhm0pdiqX1yWhsQux-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="PCnnhm0pdiqX1yWhsQux-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-175.00000000000023" y="-230" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="PCnnhm0pdiqX1yWhsQux-114" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PCnnhm0pdiqX1yWhsQux-71" target="PCnnhm0pdiqX1yWhsQux-113">
           <mxGeometry relative="1" as="geometry" />
@@ -278,6 +279,9 @@
         </mxCell>
         <mxCell id="PCnnhm0pdiqX1yWhsQux-129" value="Tampilan Detail Data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="-460" y="-316" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PCnnhm0pdiqX1yWhsQux-138" value="Konfirmasi&lt;div&gt;&amp;nbsp;penghapusan data&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="-270" width="155.5" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
