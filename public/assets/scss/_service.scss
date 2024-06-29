@@ -1,0 +1,265 @@
+// Service Section
+.service-sectionv1 {
+	position: relative;
+	&::before {
+		position: absolute;
+		right: 300px;
+		top: 0;
+		content: "";
+		width: 50%;
+		height: 392px;
+		background: var(--cmnbg);
+		border-radius: 10px;
+		z-index: -1;
+	}
+	.swiper-slide.swiper-slide-active {
+		.program-item {
+			background: $white;
+			box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+			p,
+			.readmore {
+				opacity: 1;
+			}
+		}
+	}
+	.dot-cmn {
+		.swiper-pagination-bullet {
+			width: 15px;
+			height: 5px;
+			border-radius: 10px;
+			background: #f2f2f2;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet-active {
+			width: 33px;
+			background: $p5-clr !important;
+		}
+	}
+	.aservice-shape1 {
+		position: absolute;
+		left: 65px;
+		bottom: 10px;
+		animation: lf 2s linear infinite;
+	}
+	@include breakpoint(max-xl4) {
+		&::before {
+			position: absolute;
+			right: 0px;
+			top: 0;
+			content: "";
+			width: 1011px;
+			height: 392px;
+			border-radius: 10px;
+			z-index: -1;
+		}
+		padding: 80px 0 60px;
+	}
+	@include breakpoint(max-xl) {
+		&::before {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	@include breakpoint(max-md) {
+		.aservice-shape1 {
+			display: none;
+		}
+	}
+}
+.service-wrapslide {
+	.program-item {
+		padding: 32px 30px;
+		margin-left: 0;
+		background: transparent;
+		transition: all 0.5s;
+		h4 {
+			a {
+				color: $black;
+			}
+		}
+		p,
+		.readmore {
+			opacity: 0;
+		}
+		&.active,
+		&:hover {
+			background: $white;
+			p,
+			.readmore {
+				opacity: 1;
+			}
+		}
+		margin-bottom: 25px;
+	}
+}
+// Service Section
+
+// Clone Component Section
+.clone-component-section {
+	.bard-element {
+		position: absolute;
+		top: 300px;
+		right: 100px;
+		animation: lf 2s linear infinite;
+	}
+	.product-clode-content {
+		.theme-btn {
+			padding: 17px 30px;
+			&::before {
+				background: $white;
+			}
+			&:hover {
+				span {
+					color: $black;
+				}
+			}
+		}
+		.cart-btn {
+			border: 2px solid $p3-clr;
+			padding: 14px 30px;
+			&::before {
+				background: $p3-clr;
+			}
+			&:hover {
+				span {
+					color: $white;
+				}
+			}
+		}
+	}
+	.product-title {
+		max-width: 450px;
+		margin: 0 auto 40px;
+	}
+	.sun-uncle-section {
+		display: flex;
+		justify-content: center;
+		.sun-bg {
+			z-index: 1;
+			position: relative;
+		}
+		.sun-unlce {
+			width: 650px;
+			height: 700px;
+			position: absolute;
+			bottom: -150px;
+			animation: updown 2s linear infinite;
+			img {
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		.sun-uncle-section {
+			.sun-unlce {
+				width: 650px;
+				height: 700px;
+				bottom: -220px;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.sun-uncle-section {
+			.sun-unlce {
+				width: 450px;
+				height: 600px;
+				bottom: -180px;
+			}
+		}
+		.product-clode-content {
+			.theme-btn {
+				padding: 15px 20px;
+			}
+			.cart-btn {
+				padding: 12px 20px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.sun-uncle-section {
+			.sun-unlce {
+				width: 450px;
+				height: 600px;
+				bottom: -250px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.sun-uncle-section {
+			.sun-unlce {
+				width: 250px;
+				height: 500px;
+				bottom: -220px;
+			}
+		}
+	}
+}
+// Clone Component Section
+
+// Extra Class Section
+.extra-sectionv {
+	.jerap-element {
+		position: absolute;
+		left: 0;
+		top: 80px;
+		z-index: -1;
+	}
+	@include breakpoint(max-xxxl) {
+		.jerap-element {
+			left: -50px;
+			top: 80px;
+			width: 400px;
+			object-fit: contain;
+		}
+	}
+}
+// Extra Class Section
+
+// Service Details Section
+.common-content-box {
+	.custom-title {
+		font-size: 28px;
+	}
+	@include breakpoint(max-sm) {
+		.custom-title {
+			font-size: 19px;
+		}
+	}
+}
+.details-class-info {
+	border-radius: 10px;
+	padding: 30px;
+	background: $cmnbg;
+	.icon {
+		width: 88px;
+		height: 88px;
+		background: $white;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		transition: all 0.5s;
+		img {
+			width: 55px;
+			object-fit: contain;
+		}
+	}
+	&:hover {
+		.icon {
+			transform: scale(1.05);
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 20px;
+		.icon {
+			width: 68px;
+			height: 68px;
+			margin-bottom: 16px;
+			img {
+				width: 45px;
+				object-fit: contain;
+			}
+		}
+	}
+}
+// Service Details Section

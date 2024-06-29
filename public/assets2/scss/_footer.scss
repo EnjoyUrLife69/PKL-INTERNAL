@@ -1,0 +1,409 @@
+.footer-widgets-wrapper {
+	padding: 80px 0 80px;
+	position: relative;
+	z-index: 9;
+	.single-footer-widget {
+		.widget-head {
+			margin-bottom: 30px;
+		}
+		.footer-logo {
+			margin-bottom: 30px;
+			display: block;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 60px 0 70px;
+		.single-footer-widget {
+			.widget-head {
+				margin-bottom: 20px;
+			}
+			.footer-logo {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@include breakpoint(max-lg) {
+		padding: 50px 0 60px;
+	}
+}
+
+.footer-bottom {
+	position: relative;
+	z-index: 9;
+	.footer-wrapper {
+		position: relative;
+		z-index: 9;
+		padding: 26px 0;
+		p {
+			a {
+				color: $p2-clr;
+			}
+		}
+		.footer-menu {
+			@include flex;
+			gap: 30px;
+			li {
+				a {
+					background-image: linear-gradient($theme-color, $theme-color);
+					background-position: 0 95%;
+					background-repeat: no-repeat;
+					background-size: 0% 2px;
+					display: inline-block;
+					@include transition;
+					font-size: 16px;
+					font-weight: 400;
+					font-family: $body-font;
+					&:hover {
+						background-size: 100% 1px;
+						color: $p2-clr;
+					}
+				}
+			}
+		}
+		@include breakpoint(max-sm) {
+			.footer-menu {
+				@include flex;
+				gap: 1px 12px;
+				flex-wrap: wrap;
+				justify-content: center;
+				li {
+					a {
+						color: $header-color;
+						background-image: linear-gradient($theme-color, $theme-color);
+						background-position: 0 95%;
+						background-repeat: no-repeat;
+						background-size: 0% 2px;
+						display: inline-block;
+						@include transition;
+						font-size: 16px;
+						font-weight: 400;
+						font-family: $body-font;
+						color: rgba(255, 255, 255, 0.7);
+						&:hover {
+							background-size: 100% 1px;
+							color: $p2-clr;
+						}
+					}
+				}
+			}
+		}
+	}
+	.scroll-icon {
+		position: absolute;
+		left: 90.2%;
+		top: -40px;
+		transform: translateX(-50%);
+		width: 50px;
+		height: 50px;
+		line-height: 45px;
+		background-color: $p2-clr;
+		border-radius: 50%;
+		text-align: center;
+		color: $white;
+		border: 3px solid $white;
+		display: inline-block;
+		z-index: 99;
+
+		@include breakpoint(max-xxl) {
+			left: 50%;
+		}
+	}
+}
+
+//Footer Style Version One 01
+.footer-style1 {
+	.footer-content {
+		.pre-pragraph {
+			color: $pra;
+			margin-bottom: 24px;
+		}
+		.social-wrapper {
+			gap: 14px;
+			a {
+				background: $cmnbg;
+				i {
+					color: $black;
+					transition: all 0.5s;
+				}
+				svg {
+					stroke: $black;
+					transition: all 0.5s;
+				}
+				&:hover {
+					background: $p3-clr;
+					i {
+						color: $white;
+					}
+					svg {
+						stroke: $white;
+					}
+				}
+			}
+		}
+	}
+	.single-footer-widget {
+		.list-area {
+			display: grid;
+			gap: 10px;
+			li {
+				a {
+					transition: all 0.4s;
+					font-size: 16px;
+					color: $pra;
+					font-family: $body-font;
+					&:hover {
+						color: $p2-clr;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		.list-contact {
+			gap: 16px;
+			li {
+				display: flex;
+				gap: 13px;
+				i {
+					width: 42px;
+					height: 42px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 50%;
+					border: 1px solid #f2f2f2;
+					color: $p4-clr;
+					font-size: 16px;
+					line-height: 2;
+				}
+				.lited {
+					max-width: 168px;
+					color: $pra;
+				}
+			}
+		}
+		.widget-head {
+			h4 {
+				font-weight: 500;
+				color: $black;
+				position: relative;
+				display: inline-block;
+				padding-bottom: 10px;
+				&::before {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 140%;
+					content: "";
+					height: 2px;
+					background: $pra;
+				}
+				&::after {
+					position: absolute;
+					left: 140%;
+					bottom: -3px;
+					width: 8px;
+					height: 8px;
+					content: "";
+					background: $pra;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		.footer-wrapper {
+			border-top: 1px solid rgba(13, 13, 13, 0.1);
+			p {
+				color: $pra;
+				a {
+					color: $p2-clr;
+				}
+			}
+			.footer-menu {
+				li {
+					a {
+						color: $pra;
+					}
+				}
+			}
+		}
+	}
+}
+//Footer Style Version One 01
+
+//Footer Style Version Two 02\
+.footer-style2 {
+	.single-footer-widget {
+		.footer-content {
+			.pre-pragraph {
+				color: rgba(255, 255, 255, 0.8);
+				line-height: 24px;
+				margin-bottom: 30px;
+			}
+			.social-wrapper {
+				gap: 16px;
+				a {
+					border-radius: 5px;
+					background: rgba(255, 255, 255, 0.1);
+					&:hover {
+						background: $p4-clr;
+					}
+				}
+			}
+		}
+		.list-area {
+			display: grid;
+			gap: 10px;
+			li {
+				a {
+					transition: all 0.4s;
+					font-size: 16px;
+					color: $white;
+					font-family: $body-font;
+					&:hover {
+						color: $p2-clr;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		.list-contact {
+			gap: 18px;
+			li {
+				display: flex;
+				gap: 13px;
+				i {
+					color: $white;
+					font-size: 16px;
+					line-height: 2;
+				}
+				.lited {
+					max-width: 168px;
+					color: $white;
+				}
+			}
+		}
+		.widget-head {
+			h4 {
+				font-weight: 500;
+				color: $white;
+				position: relative;
+				display: inline-block;
+				padding-bottom: 10px;
+				&::before {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 140%;
+					content: "";
+					height: 2px;
+					background: $white;
+				}
+				&::after {
+					position: absolute;
+					left: 140%;
+					bottom: -3px;
+					width: 8px;
+					height: 8px;
+					content: "";
+					background: $white;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.single-footer-form {
+		p {
+			margin-bottom: 30px;
+			max-width: 254px;
+		}
+		form {
+			max-width: 270px;
+			display: flex;
+			align-items: center;
+			background: rgba(255, 255, 255, 0.1);
+			input {
+				padding: 16px 2px 16px 18px;
+				width: 100%;
+				height: 60px;
+				border: unset;
+				color: $white;
+				background: transparent;
+				font-weight: 300;
+				font-size: 14px;
+			}
+			::placeholder {
+				color: $white;
+			}
+			button {
+				height: 60px;
+				min-width: 70px;
+				background: $p2-clr;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: unset;
+				i {
+					color: $white;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		.footer-wrapper {
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			p {
+				color: rgba(255, 255, 255, 0.7);
+				a {
+					color: $p2-clr;
+				}
+			}
+			.footer-menu {
+				li {
+					a {
+						color: rgba(255, 255, 255, 0.7);
+						&:hover {
+							background-size: 100% 1px;
+							color: $p2-clr;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-apple {
+		right: 60px;
+		top: 180px;
+		animation: updown 2s linear infinite;
+	}
+	.footer-cut {
+		bottom: 170px;
+		left: 40%;
+	}
+	@include breakpoint(max-xxl) {
+		.single-footer-widget {
+			.footer-content {
+				.pre-pragraph {
+					margin-bottom: 22px;
+				}
+				.social-wrapper {
+					gap: 10px;
+				}
+			}
+			.list-area {
+				gap: 8px;
+			}
+			.list-contact {
+				gap: 12px;
+			}
+		}
+		.single-footer-form {
+			p {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+//Footer Style Version Two 02

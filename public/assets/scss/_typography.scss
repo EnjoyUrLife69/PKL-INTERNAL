@@ -1,0 +1,493 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+$heading-font: "Jost", sans-serif;
+$sub-font: "Bubblegum Sans", sans-serif;
+$body-font: "Nunito", sans-serif;
+
+.heading-font {
+	font-family: $heading-font;
+}
+.sub-font {
+	font-family: $sub-font;
+}
+.body-font {
+	font-family: $body-font;
+}
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Free";
+// i{
+// 	line-height: 2;
+// }
+
+body {
+	font-family: $body-font;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 28px;
+	color: $text-color;
+	background-color: $white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input:focus {
+	color: $white;
+	outline: none;
+}
+
+input {
+	color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	margin: 0px;
+	padding: 0;
+	color: $header-color;
+	text-transform: capitalize;
+	@include transition;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 112%;
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 116%;
+	font-weight: 700;
+	@include breakpoint(max-xl) {
+		font-size: 42px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 36px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 28px;
+	}
+}
+h3 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 28px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 26px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 22px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 22px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 145%;
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	cursor: pointer;
+	color: $header-color;
+	@include transition;
+}
+
+p {
+	margin: 0px;
+	@include transition;
+	font-family: $body-font;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+span {
+	font-size: 16px;
+	line-height: 25.6px;
+	margin: 0px;
+	@include transition;
+}
+
+// Custom Container
+.container {
+	@include breakpoint(max-xl) {
+		max-width: 1340px;
+		margin: 0 auto;
+	}
+}
+.gra-border {
+	border: 1px solid #f2f2f2;
+}
+.gra-border2 {
+	border: 2px solid #f2f2f2;
+}
+// Custom Container
+
+.p1-clr {
+	color: var(--p1-clr);
+}
+.p1-bg {
+	background: var(--p1-clr);
+}
+.p2-clr {
+	color: var(--p2-clr);
+}
+.p2-bg {
+	background: var(--p2-clr);
+}
+.p3-clr {
+	color: var(--p3-clr);
+}
+.p3-bg {
+	background: var(--p3-clr);
+}
+.p4-clr {
+	color: var(--p4-clr);
+}
+.p4-bg {
+	background: var(--p4-clr);
+}
+.p5-clr {
+	color: var(--p5-clr);
+}
+.p5-border {
+	border: 1px solid var(--p5-clr);
+}
+.p5-bg {
+	background: var(--p5-clr);
+}
+.cmn-bg {
+	background: var(--cmnbg);
+}
+
+//GLobal Center
+.d-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+//GLobal Center
+
+.trns {
+	transition: all 0.4s;
+}
+.black {
+	color: $black;
+}
+.white {
+	color: $white;
+}
+.white-bg {
+	background: $white;
+}
+.theme {
+	color: $theme;
+}
+.theme2 {
+	color: $theme2;
+}
+.header {
+	color: $header;
+}
+.pra {
+	color: $pra;
+}
+.text {
+	color: $text;
+}
+
+//Some Customization Margin Padding
+.round10 {
+	border-radius: 10px;
+}
+.round100 {
+	border-radius: 100px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-24 {
+	margin-bottom: 24px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+//margin top
+.mt-60 {
+	margin-top: 60px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-24 {
+	margin-top: 24px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+
+//Padding Space
+.pb-60 {
+	padding-bottom: 60px;
+}
+.pb-50 {
+	padding-bottom: 50px;
+}
+.pb-40 {
+	padding-bottom: 40px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.pb-24 {
+	padding-bottom: 24px;
+}
+.pb-20 {
+	padding-bottom: 20px;
+}
+//margin top
+.pt-60 {
+	padding-top: 60px;
+}
+.pt-50 {
+	padding-top: 50px;
+}
+.pt-40 {
+	padding-top: 40px;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.pt-24 {
+	padding-top: 24px;
+}
+.pt-20 {
+	padding-top: 20px;
+}
+@include breakpoint(max-xxl) {
+	.mb-60 {
+		margin-bottom: 50px;
+	}
+	.mb-50 {
+		margin-bottom: 40px;
+	}
+	.mb-40 {
+		margin-bottom: 30px;
+	}
+	.mb-30 {
+		margin-bottom: 24px;
+	}
+	.mb-24 {
+		margin-bottom: 20px;
+	}
+	.mb-20 {
+		margin-bottom: 17px;
+	}
+	.mt-60 {
+		margin-top: 50px;
+	}
+	.mt-50 {
+		margin-top: 40px;
+	}
+	.mt-40 {
+		margin-top: 30px;
+	}
+	.mt-30 {
+		margin-top: 24px;
+	}
+	.mt-24 {
+		margin-top: 20px;
+	}
+	.mt-20 {
+		margin-top: 17px;
+	}
+
+	//Padding Space
+	.pb-60 {
+		padding-bottom: 50px;
+	}
+	.pb-50 {
+		padding-bottom: 40px;
+	}
+	.pb-40 {
+		padding-bottom: 30px;
+	}
+	.pb-30 {
+		padding-bottom: 24px;
+	}
+	.pb-24 {
+		padding-bottom: 20px;
+	}
+	.pb-20 {
+		padding-bottom: 17px;
+	}
+	//margin top
+	.pt-60 {
+		padding-top: 50px;
+	}
+	.pt-50 {
+		padding-top: 40px;
+	}
+	.pt-40 {
+		padding-top: 30px;
+	}
+	.pt-30 {
+		padding-top: 24px;
+	}
+	.pt-24 {
+		padding-top: 20px;
+	}
+	.pt-20 {
+		padding-top: 17px;
+	}
+}
+@include breakpoint(max-lg) {
+	.mb-60 {
+		margin-bottom: 40px;
+	}
+	.mb-50 {
+		margin-bottom: 30px;
+	}
+	.mb-40 {
+		margin-bottom: 24px;
+	}
+	.mb-30 {
+		margin-bottom: 20px;
+	}
+	.mb-24 {
+		margin-bottom: 16px;
+	}
+	.mb-20 {
+		margin-bottom: 15px;
+	}
+	.mt-60 {
+		margin-top: 40px;
+	}
+	.mt-50 {
+		margin-top: 30px;
+	}
+	.mt-40 {
+		margin-top: 24px;
+	}
+	.mt-30 {
+		margin-top: 20px;
+	}
+	.mt-24 {
+		margin-top: 16px;
+	}
+	.mt-20 {
+		margin-top: 15px;
+	}
+
+	//Padding Space
+	.pb-60 {
+		padding-bottom: 40px;
+	}
+	.pb-50 {
+		padding-bottom: 30px;
+	}
+	.pb-40 {
+		padding-bottom: 24px;
+	}
+	.pb-30 {
+		padding-bottom: 20px;
+	}
+	.pb-24 {
+		padding-top: 16px;
+	}
+	.pb-20 {
+		padding-bottom: 15px;
+	}
+	//margin top
+	.pt-60 {
+		padding-top: 40px;
+	}
+	.pt-50 {
+		padding-top: 30px;
+	}
+	.pt-40 {
+		padding-top: 24px;
+	}
+	.pt-30 {
+		padding-top: 20px;
+	}
+	.pt-24 {
+		padding-top: 16px;
+	}
+	.pt-20 {
+		padding-top: 15px;
+	}
+}
+
+.iconbg-v2 {
+	background: $p2-clr;
+}
+.iconbg-v3 {
+	background: $p3-clr;
+}
+.iconbg-v4 {
+	background: $p4-clr;
+}
+.iconbg-v5 {
+	background: $p5-clr;
+}
+//Some Customization Margin Padding

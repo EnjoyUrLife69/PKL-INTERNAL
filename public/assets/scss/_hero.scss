@@ -1,0 +1,458 @@
+//Banner Version One
+.banner-1 {
+	background: $cmnbg;
+	padding-top: 80px;
+	height: 790px;
+	z-index: 1;
+	position: relative;
+	.banner-v1-content {
+		h1 {
+			font-size: 70px;
+			line-height: 82px;
+			color: $black;
+			margin-bottom: 20px;
+			.text-layer {
+				position: absolute;
+				top: 0;
+				left: -30px;
+			}
+			span {
+				font-size: 70px;
+				line-height: 82px;
+			}
+			.title-explore {
+				font-weight: 400;
+			}
+			.text-sount {
+				color: $p3-clr;
+			}
+		}
+		p {
+			font-size: 16px;
+			max-width: 430px;
+			margin: 0 auto 24px;
+		}
+		.theme-btn {
+			&:hover {
+				&::before {
+					background: $p5-clr;
+				}
+			}
+		}
+	}
+	.banner-shape-thumb2 {
+		margin-top: 240px;
+		animation: updown1 2s linear infinite;
+	}
+	.banner-shape-thumb1 {
+		animation: updown1 3s linear infinite;
+	}
+	.rainbow-shape {
+		position: absolute;
+		bottom: -81px;
+		left: 0;
+		z-index: -1;
+	}
+	.left-ring {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		animation: updownq1 4s linear infinite;
+	}
+	.right-ring {
+		position: absolute;
+		right: 0;
+		bottom: 160px;
+		animation: updown1 4s linear infinite;
+	}
+	.global-upen {
+		position: absolute;
+		top: 100px;
+		right: 20%;
+		animation: skw1 2s linear infinite;
+	}
+	@include breakpoint(max-xxl) {
+		.banner-shape-thumb2,
+		.banner-shape-thumb1 {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		.rainbow-shape {
+			position: absolute;
+			bottom: -121px;
+			left: 0;
+			z-index: -1;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.banner-v1-content {
+			h1 {
+				font-size: 60px;
+				line-height: 72px;
+				color: $black;
+				margin-bottom: 20px;
+				span {
+					font-size: 60px;
+					line-height: 72px;
+				}
+			}
+			.theme-btn {
+				padding: 10px 29px;
+			}
+		}
+		.rainbow-shape {
+			bottom: -221px;
+			left: 0;
+		}
+		.global-upen {
+			display: none;
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding-top: 50px;
+		height: initial;
+		.rainbow-shape {
+			display: none;
+		}
+		.banner-shape-thumb2 {
+			margin-top: 100px;
+			margin-bottom: 40px;
+		}
+		.banner-shape-thumb1 {
+			margin-top: 30px;
+		}
+		.left-ring {
+			display: none;
+		}
+	}
+	@include breakpoint(max-md) {
+		.banner-v1-content {
+			h1 {
+				font-size: 48px;
+				line-height: 62px;
+				margin-bottom: 16px;
+				span {
+					font-size: 48px;
+					line-height: 62px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.banner-shape-thumb2 {
+			margin-top: 50px;
+			margin-bottom: 40px;
+			width: 140px;
+		}
+		.banner-shape-thumb1 {
+			margin-top: 0px;
+			width: 150px;
+			position: absolute;
+			right: 0;
+			bottom: 30px;
+		}
+		.right-ring {
+			right: -60px;
+			bottom: 160px;
+		}
+		.global-upen {
+			display: block;
+			bottom: 20px;
+			top: initial;
+			right: initial;
+			left: 40%;
+		}
+	}
+	@include breakpoint(max-xs) {
+		.banner-v1-content {
+			padding: 0px 5px;
+			h1 {
+				font-size: 40px;
+				line-height: 52px;
+				margin-bottom: 16px;
+				span {
+					font-size: 40px;
+					line-height: 52px;
+				}
+			}
+		}
+	}
+}
+@keyframes updown1 {
+	50% {
+		transform: translateY(-10px);
+	}
+}
+@keyframes updownq1 {
+	50% {
+		transform: translatex(-40px);
+	}
+}
+@keyframes skw1 {
+	50% {
+		transform: skewX(5deg);
+	}
+}
+//Banner Version One
+
+//Banner Version Two
+.bannerv2-section {
+	padding: 265px 0 180px;
+	background: url(../img/abanner/banner-2bg.png) no-repeat center center;
+	background-size: cover;
+	z-index: 1;
+	.banner-kyte {
+		position: absolute;
+		bottom: 100px;
+		left: 40px;
+		animation: lf 2s linear infinite;
+	}
+	.banner-shape {
+		position: absolute;
+		right: -8px;
+		bottom: -8px;
+	}
+	.banner-shadow {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.herov2-content {
+		h1 {
+			color: $black;
+		}
+		.small-aregtengle {
+			position: absolute;
+			bottom: 18px;
+			left: 170px;
+			animation: rots1 2s linear infinite;
+		}
+	}
+	@include breakpoint(max-xl4) {
+		padding: 220px 0 170px;
+		.banner-shape {
+			position: absolute;
+			right: -8px;
+			bottom: -8px;
+			width: 900px;
+		}
+		.banner-kyte {
+			bottom: 40px;
+			left: -40px;
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		padding: 220px 0 150px;
+		.banner-shape {
+			position: absolute;
+			right: -8px;
+			bottom: -8px;
+			width: 750px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		padding: 190px 0 150px;
+		.herov2-content {
+			h1 {
+				font-size: 48px;
+				line-height: 63px;
+			}
+		}
+		.banner-shape {
+			position: absolute;
+			right: -8px;
+			bottom: -8px;
+			width: 680px;
+		}
+		.banner-kyte {
+			bottom: -80px;
+			left: -40px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 150px 0 150px;
+		.herov2-content {
+			h1 {
+				font-size: 42px;
+				line-height: 55px;
+			}
+		}
+		.banner-shape {
+			position: absolute;
+			right: -8px;
+			bottom: -8px;
+			width: 580px;
+			z-index: -1;
+		}
+		.banner-kyte {
+			bottom: -80px;
+			left: -40px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 150px 0 150px;
+		.herov2-content {
+			h1 {
+				font-size: 42px;
+				line-height: 55px;
+			}
+			.small-aregtengle {
+				bottom: 18px;
+				left: 150px;
+				width: 60px;
+			}
+		}
+		.banner-shape {
+			right: -8px;
+			bottom: -8px;
+			width: 580px;
+			z-index: -1;
+			opacity: 0.4;
+		}
+		.banner-kyte {
+			bottom: -0px;
+			left: -0px;
+			width: 190px;
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 140px 0 150px;
+		.herov2-content {
+			h1 {
+				font-size: 42px;
+				line-height: 55px;
+			}
+			.small-aregtengle {
+				bottom: 18px;
+				left: 150px;
+				width: 60px;
+			}
+		}
+		.banner-shape {
+			right: -8px;
+			bottom: -8px;
+			width: 580px;
+			z-index: -1;
+			opacity: 0.2;
+		}
+		.banner-kyte {
+			bottom: -0px;
+			left: -0px;
+			width: 190px;
+		}
+	}
+	@include breakpoint(max-xs) {
+		padding: 140px 0 150px;
+		.herov2-content {
+			h1 {
+				font-size: 36px;
+				line-height: 48px;
+			}
+		}
+	}
+}
+//Banner Version Two
+
+//Breadcrumnd Banner
+.breadcrumnd-banner {
+	padding: 60px 0 60px;
+	.breadcrumnd-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.breadcrumnd-content {
+			.bread-list {
+				li {
+					color: $black;
+					font-size: 28px;
+					font-weight: 700;
+					font-family: $body-font;
+					a {
+						color: $black;
+						font-weight: 700;
+						font-size: 28px;
+						font-family: $body-font;
+					}
+					i {
+						font-size: 20px;
+						line-height: 0;
+					}
+				}
+			}
+		}
+		.breadcrumnd-thumb {
+			max-width: 315px;
+			.mimg {
+				width: 100%;
+			}
+			.bread-child {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				animation: lf 2s linear infinite;
+			}
+			.bread-cat {
+				position: absolute;
+				left: -30px;
+				bottom: 20px;
+				animation: updown 2s linear infinite;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.breadcrumnd-wrapper {
+			.breadcrumnd-content {
+				h1 {
+					font-size: 55px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.breadcrumnd-wrapper {
+			display: grid;
+			gap: 40px;
+			justify-content: center;
+			.breadcrumnd-content {
+				h1 {
+					text-align: center;
+					font-size: 36px;
+				}
+				.bread-list {
+					justify-content: center;
+					li {
+						font-size: 18px;
+						font-weight: 500;
+						a {
+							font-weight: 700;
+							font-size: 18px;
+						}
+						i {
+							font-size: 14px;
+							line-height: 0;
+						}
+					}
+				}
+			}
+			.breadcrumnd-thumb {
+				max-width: 315px;
+				.mimg {
+					width: 100%;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.breadcrumnd-wrapper {
+			.breadcrumnd-thumb {
+				max-width: 240px;
+				.mimg {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//Breadcrumnd Banner

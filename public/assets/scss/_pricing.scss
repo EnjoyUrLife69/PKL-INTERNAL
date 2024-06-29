@@ -1,0 +1,67 @@
+//Pricing
+.pricing-items {
+	box-shadow: -20px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+	transition: all 0.4s;
+	border-radius: 10px;
+	.pricing-head {
+		color: $black;
+		font-size: 28px;
+		font-weight: 600;
+		padding: 14px 8px;
+		text-align: center;
+		background: #fff0e5;
+		font-family: $heading-font;
+	}
+	.pricing-body {
+		padding: 30px 40px 40px;
+		.theme-btn {
+			border: 1px solid $p2-clr;
+			color: $black;
+			border-radius: 10px;
+			&:hover {
+				background: $p2-clr;
+				&::before {
+					background: $p2-clr;
+				}
+				color: $white;
+			}
+		}
+		.pricing-listing {
+			li {
+				i {
+					font-size: 14px;
+				}
+				.cros {
+					border-radius: 50%;
+					font-size: 16px;
+					color: #fff0e5;
+					background: #0a6375;
+				}
+			}
+		}
+	}
+	.price-title {
+		color: $p4-clr;
+		.mos {
+			color: $black;
+			font-size: 24px;
+		}
+	}
+	&.cart-active {
+		.pricing-body {
+			.theme-btn {
+				background: $p2-clr;
+				color: $white;
+			}
+		}
+		.pricing-head {
+			background: $p2-clr;
+			color: $white;
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		.pricing-body {
+			padding: 20px 18px 20px;
+		}
+	}
+}

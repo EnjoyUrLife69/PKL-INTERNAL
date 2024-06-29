@@ -1,0 +1,121 @@
+.preloader {
+	align-items: center;
+	cursor: default;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+	background: rgba(243, 243, 243, 0.87);
+	span {
+		position: absolute;
+		&:nth-child(1) {
+			top: 0;
+			right: -100px;
+			width: 100px;
+			height: 100px;
+			background: #f7951ea1;
+			animation: zints1 2s linear infinite;
+		}
+		&:nth-child(2) {
+			bottom: 0;
+			left: -100px;
+			width: 100px;
+			height: 100px;
+			background: #f7951ea1;
+			animation: zints2 2s linear infinite;
+		}
+		&:nth-child(3){
+			animation: updown 2s linear infinite;
+		}
+	}
+}
+
+.search-wrap {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background-color: rgba(255, 255, 255, 0.9);
+	.search-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.search-cell {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+
+	.search-field-holder {
+		width: 50%;
+		margin: auto;
+		position: relative;
+		animation: slideInUp 0.3s;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.search-wrap .search-field-holder {
+		width: 70%;
+	}
+}
+@media (max-width: 575px) {
+	.search-wrap .search-field-holder {
+		width: 80%;
+	}
+}
+.search-wrap .main-search-input {
+	width: 100%;
+	height: 40px;
+	border: 0;
+	padding: 0 50px;
+	text-transform: capitalize;
+	background: transparent;
+	font-size: 16px;
+	color: $p2-clr;
+	border-bottom: 0.5px solid $p2-clr;
+	text-align: center;
+	letter-spacing: 2px;
+}
+@media (max-width: 575px) {
+	.search-wrap .main-search-input {
+		height: 50px;
+		padding: 0 0;
+		line-height: 50px;
+		font-size: 18px;
+	}
+}
+
+.search-wrap input.form-control,
+.search-wrap input.form-control:focus {
+	background-color: $p2-clr;
+}
+
+input.main-search-input::placeholder {
+	color: $p2-clr;
+	opacity: 1;
+	font-size: 18px;
+}
+@media (max-width: 575px) {
+	input.main-search-input::placeholder {
+		font-size: 18px;
+	}
+}
+.search-close {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 30px;
+	color: $p2-clr;
+	cursor: pointer;
+}

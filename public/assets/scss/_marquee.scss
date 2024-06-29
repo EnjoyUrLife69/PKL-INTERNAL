@@ -1,0 +1,92 @@
+.marquee-wrapper {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 9;
+	margin-top: -15px;
+	margin-bottom: -30px;
+}
+
+.text-slider {
+	font-size: 60px;
+	height: 100px;
+	line-height: 90px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: $p2-clr;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	@include breakpoint(max-md) {
+		font-size: 36px;
+	}
+
+	img {
+		margin-bottom: 10px;
+	}
+
+	&.text-color {
+		color: $header-color;
+	}
+
+	&.text-color-2 {
+		color: $header-color;
+		font-size: 50px;
+	}
+}
+
+.marquee-inner {
+	position: absolute;
+	display: inline-flex;
+	width: 200%;
+}
+
+.marquee-list {
+	float: left;
+	width: 50%;
+}
+
+.marquee-item {
+	float: left;
+	transition: animation 0.2s ease-out;
+}
+
+.marquee-inner.to-left {
+	animation: marqueeLeft 25s linear infinite;
+}
+
+@keyframes marqueeLeft {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+.marquee-inner.to-right {
+	animation: marqueeRight 25s linear infinite;
+}
+
+@keyframes marqueeRight {
+	0% {
+		right: 0;
+	}
+	100% {
+		right: -100%;
+	}
+}
+
+.marque-section-2 {
+	position: relative;
+
+	@include breakpoint(max-xl) {
+		margin-bottom: -20px;
+	}
+
+	@include breakpoint(max-lg) {
+		margin-bottom: -40px;
+	}
+}

@@ -1,0 +1,628 @@
+// About section Onex
+.about-one-thumbs {
+	display: flex;
+	align-items: end;
+	gap: 24px;
+	.thumbs {
+		.customer-satisfaction {
+			background: $p2-clr;
+			border-radius: 12px;
+			padding: 16px 22px;
+			display: inline-flex;
+			align-items: center;
+			position: absolute;
+			left: -45px;
+			bottom: -40px;
+			gap: 11px;
+			.icon {
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				background: $white;
+			}
+		}
+		.about-light1 {
+			position: absolute;
+			top: -40px;
+			left: -50px;
+			animation: zin1 2s linear infinite;
+		}
+		.about-arrows {
+			position: absolute;
+			right: -70px;
+			top: -20px;
+		}
+	}
+	.about-one-grow {
+		.academy-box {
+			background: $cmnbg;
+			border-radius: 10px;
+			padding: 21px 21px;
+			img {
+				margin-bottom: 10px;
+			}
+			h4 {
+				margin-bottom: 6px;
+				display: block;
+			}
+		}
+		.academy-box2 {
+			background: $white;
+			border-radius: 10px;
+			padding: 21px 21px;
+			filter: drop-shadow(0px 4.8px 24.4px rgba(19, 16, 34, 0.1));
+			h3 {
+				color: $p5-clr;
+				span {
+					font-size: 32px;
+					color: $p5-clr;
+				}
+				margin-bottom: 3px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		gap: 19px;
+		display: grid;
+		.thumbs {
+			max-width: 320px;
+			.main-img {
+				width: 100%;
+			}
+			.customer-satisfaction {
+				left: initial;
+				right: -140px;
+				bottom: 40%;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.thumbs {
+			.customer-satisfaction {
+				left: initial;
+				right: -40px;
+				bottom: 40%;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.thumbs {
+			.customer-satisfaction {
+				left: initial;
+				right: 10px;
+				bottom: 1%;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.thumbs {
+			width: 100% !important;
+			max-width: 100%;
+			.main-img {
+				width: 100%;
+			}
+		}
+	}
+}
+// About section Onex
+
+// Program
+.program-item {
+	border-radius: 10px;
+	padding: 40px 40px 40px 0;
+	display: flex;
+	align-items: center;
+	background: $white;
+	margin-left: 40px;
+	gap: 30px;
+	.icons {
+		min-width: 88px;
+		min-height: 88px;
+		margin-left: -40px;
+		background: $white;
+		transition: all 0.6s;
+		img {
+			transition: all 0.6s;
+		}
+	}
+	.content {
+		h4 {
+			margin-bottom: 18px;
+		}
+		p {
+			margin-bottom: 28px;
+		}
+		.readmore {
+			&:hover {
+				color: $p4-clr;
+				i {
+					color: $p4-clr;
+				}
+			}
+		}
+	}
+	&:hover {
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		.content {
+			h4 {
+				a {
+					color: $p4-clr;
+				}
+			}
+		}
+		.icons {
+			background: $p4-clr;
+			img {
+				filter: brightness(25);
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 20px 20px 20px 0;
+		gap: 14px;
+		.content {
+			h4 {
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 12px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 20px 14px 20px 14px;
+		gap: 14px;
+		display: grid;
+		margin-left: 0;
+		.icons {
+			width: 88px;
+			margin-left: 0;
+		}
+		.content {
+			h4 {
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 12px;
+			}
+		}
+	}
+}
+.program-sectionv1 {
+	.program-child {
+		position: absolute;
+		top: 0;
+		right: 40px;
+		z-index: -1;
+		animation: lf 2s linear infinite;
+	}
+	@include breakpoint(max-lg) {
+		.program-child {
+			display: none;
+		}
+	}
+}
+// Program
+
+// Protfolio
+.protfolio-sectionv1 {
+	.protfolio-itemv1 {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		.protfolio-content-box {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			z-index: 1;
+			left: 50%;
+			top: 50%;
+			width: 92%;
+			height: 88%;
+			background: rgba(247, 148, 30, 0.8);
+			border-radius: 10px;
+			transition: all 0.4s;
+			visibility: hidden;
+			opacity: 0;
+			.box {
+				max-width: 250px;
+			}
+			h4 {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: 14px;
+			}
+			.prot-arrow{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: $white;
+				position: absolute;
+				bottom: -10px;
+				transform: translateX(-50%);
+				left: 50%;
+				i{
+					font-size: 16px;
+					color: $p3-clr;
+				}
+			}
+		}
+		&:hover {
+			.protfolio-content-box {
+				transform: translate(-50%, -50%);
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+.protfolio-tabs {
+	.tablinks {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		.nav-links {
+			.tablink {
+				padding: 10px 20px;
+				border-radius: 10px;
+				border: 1px solid #f2f2f2;
+				color: $pra;
+				transition: all 0.4s;
+			}
+			&.active {
+				.tablink {
+					background: $p2-clr;
+					color: $white;
+				}
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 10px 20px;
+			flex-wrap: wrap;
+			.nav-links {
+				.tablink {
+					padding: 8px 20px;
+				}
+			}
+		}
+	}
+}
+// Protfolio
+
+// Knowledge
+.knowledge-section {
+	z-index: 1;
+	.knowledge-shapeleft {
+		position: absolute;
+		left: 70px;
+		bottom: 0;
+	}
+	.knowledge-animal {
+		position: absolute;
+		top: 100px;
+		right: 60px;
+		animation: lf 2s linear infinite;
+	}
+	.knowledge-box-wrap {
+		display: flex;
+		gap: 24px;
+		align-items: center;
+		.knowledge-inner {
+			.knowledge-big-item {
+				width: 300px;
+				height: 300px;
+				text-align: center;
+				font-weight: 600;
+				border-radius: 10px;
+				span,
+				h2 {
+					font-size: 50px;
+					line-height: 58px;
+				}
+			}
+			.knowledge-item {
+				border-radius: 10px;
+				width: 190px;
+				height: 190px;
+				text-align: center;
+				font-weight: 600;
+				span,
+				h3 {
+					font-size: 32px;
+					line-height: 36px;
+				}
+			}
+			.knowledge-left {
+				margin-left: auto;
+			}
+		}
+	}
+
+	@include breakpoint(max-xxxl) {
+		.knowledge-shapeleft {
+			left: 30px;
+			bottom: 0;
+			height: 400px;
+			z-index: -1;
+		}
+		.knowledge-animal {
+			top: 100px;
+			right: 30px;
+			width: 180px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.knowledge-box-wrap {
+			display: flex;
+			gap: 16px;
+			align-items: center;
+			.knowledge-inner {
+				.knowledge-big-item {
+					width: 240px;
+					height: 240px;
+					font-weight: 500;
+					span,
+					h2 {
+						font-size: 36px;
+						line-height: 40px;
+					}
+				}
+				.knowledge-item {
+					width: 140px;
+					height: 140px;
+					font-weight: 500;
+					span,
+					h3 {
+						font-size: 19px;
+						line-height: 22px;
+					}
+				}
+				.knowledge-left {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.knowledge-box-wrap {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			.knowledge-inner {
+				.knowledge-big-item {
+					width: 200px;
+					height: 200px;
+					font-weight: 500;
+					span,
+					h2 {
+						font-size: 36px;
+						line-height: 40px;
+					}
+				}
+				.knowledge-item {
+					width: 110px;
+					height: 110px;
+					font-weight: 500;
+					span,
+					h3 {
+						font-size: 19px;
+						line-height: 22px;
+					}
+				}
+				.knowledge-left {
+					margin-left: auto;
+				}
+			}
+		}
+		.knowledge-animal {
+			top: 30px;
+			right: 30px;
+			width: 120px;
+		}
+	}
+	@include breakpoint(max-md) {
+		.knowledge-box-wrap {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			align-items: center;
+			.knowledge-inner {
+				.knowledge-big-item {
+					width: 200px;
+					height: 200px;
+					font-weight: 500;
+					span,
+					h2 {
+						font-size: 36px;
+						line-height: 40px;
+					}
+				}
+				.knowledge-item {
+					width: 110px;
+					height: 110px;
+					font-weight: 500;
+					span,
+					h3 {
+						font-size: 19px;
+						line-height: 22px;
+					}
+				}
+				.knowledge-left {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xs) {
+		.knowledge-box-wrap {
+			.knowledge-inner {
+				.knowledge-big-item {
+					width: 100px;
+					height: 100px;
+					font-weight: 500;
+					span,
+					h2 {
+						font-size: 18px;
+						line-height: 22px;
+					}
+				}
+				.knowledge-item {
+					width: 80px;
+					height: 80px;
+					font-weight: 500;
+					span,
+					h3 {
+						font-size: 16px;
+						line-height: 28px;
+					}
+				}
+				.knowledge-left {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}
+.knowledge-content {
+	max-width: 470px;
+	.theme-btn {
+		border-radius: 100px;
+	}
+}
+// Knowledge
+
+// Stay Section
+.stay-section {
+	z-index: 1;
+	.stay-element {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+	@include breakpoint(max-sm) {
+		.stay-thumb {
+			max-width: 380px;
+			margin: 0 auto;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+// Stay Section
+
+// About Version02 Section
+.about-contentv02 {
+	.theme-btn {
+		padding: 17px 30px;
+		&::before {
+			background: $white;
+		}
+		&:hover {
+			span {
+				color: $black;
+			}
+		}
+	}
+	.cart-btn {
+		border: 2px solid $p2-clr;
+		padding: 14px 30px;
+		&::before {
+			background: $p2-clr;
+		}
+		&:hover {
+			span {
+				color: $white;
+			}
+		}
+	}
+}
+.about-thumb-innerv2 {
+	display: flex;
+	gap: 24px;
+	.thumb-left-cont {
+		display: grid;
+		gap: 24px;
+		.thumb {
+			width: 100%;
+			img {
+				width: 100%;
+				border-radius: 0 0 0 150px;
+			}
+		}
+		.thumb-cont {
+			background: $cmnbg;
+			padding: 50px 20px;
+			border-radius: 64px 64px 0 0;
+			display: flex;
+			justify-content: center;
+			gap: 40px;
+			border-bottom: 5px solid $p4-clr;
+			.aicon {
+				width: 60px;
+				height: 60px;
+				object-fit: contain;
+			}
+			.contents {
+				h4 {
+					font-size: 32px;
+					color: $black;
+					span {
+						font-size: 32px;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+	.right-thumb {
+		width: 300px;
+		height: 496px;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 150px 0px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.thumb-left-cont {
+			width: 280px;
+		}
+		.right-thumb {
+			width: 300px;
+			height: 496px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.thumb-left-cont {
+			width: initial;
+		}
+		.right-thumb {
+			width: initial;
+			height: initial;
+		}
+	}
+	@include breakpoint(max-sm) {
+		.thumb-left-cont {
+			width: 100%;
+		}
+	}
+}
+// About Version02 Section

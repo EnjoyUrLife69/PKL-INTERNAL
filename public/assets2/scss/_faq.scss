@@ -1,0 +1,102 @@
+.faq-thumbs {
+	width: 100%;
+	animation: smzom 10s linear infinite;
+	img {
+		width: 100%;
+	}
+}
+@keyframes smzom {
+	50% {
+		transform: scale(1.04);
+	}
+}
+
+.faq-content {
+	.faq {
+		.accordion-single {
+			transition: all 0.4s;
+			border-radius: 5px;
+			border: 2px solid var(--Gray-200, #f2f2f2);
+			padding: 20px 20px;
+		}
+		.header-area {
+			cursor: pointer;
+			button {
+				font-size: 20px;
+				font-weight: 700;
+				color: $black;
+				padding-right: 40px;
+				text-align: start;
+				&::after {
+					position: absolute;
+					z-index: 1;
+					right: 0;
+					border-radius: 5px;
+					font-size: 24px;
+					transform: rotate(0deg);
+					transition: all 0.5s;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-family: "Font Awesome 5 Free";
+					content: "\2b";
+					font-weight: 900;
+					width: 40px;
+					min-width: 40px;
+					height: 40px;
+					background: $p2-clr;
+					color: $white;
+				}
+			}
+		}
+		.active {
+			.header-area {
+				button {
+					&::after {
+						position: absolute;
+						z-index: 1;
+						right: 0;
+						border-radius: 5px;
+						font-size: 24px;
+						transform: rotate(0deg);
+						transition: all 0.5s;
+						background: $p5-clr !important;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-family: "Font Awesome 5 Free";
+						content: "-" !important;
+						font-weight: 900;
+						width: 40px;
+						min-width: 40px;
+						height: 40px;
+						background: $p2-clr;
+						color: $white;
+					}
+				}
+			}
+		}
+		.content-area {
+			display: none;
+			padding-top: 18px;
+		}
+		@include breakpoint(max-xl) {
+			.accordion-single {
+				padding: 15px 15px;
+			}
+			.header-area {
+				cursor: pointer;
+				button {
+					font-size: 17px;
+					padding-right: 50px;
+					text-align: start;
+					&::after {
+						width: 34px;
+						min-width: 34px;
+						height: 34px;
+					}
+				}
+			}
+		}
+	}
+}

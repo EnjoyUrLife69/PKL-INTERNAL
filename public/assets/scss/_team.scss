@@ -1,0 +1,62 @@
+// team section style
+.professional-item {
+	position: relative;
+	padding: 40px;
+	border-radius: 50px 10px;
+	background: $white;
+	box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+	transition: all 0.4s;
+	border: 2px solid $white;
+	.thumb {
+		width: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			border-radius: 50px 10px;
+			overflow: hidden;
+			transition: all 0.52s;
+		}
+	}
+	.social-wrapper {
+		gap: 14px;
+		a {
+			background: $cmnbg;
+			transition: all 0.4s;
+			i {
+				transition: all 0.4s;
+				color: $black;
+			}
+			svg {
+				transition: all 0.4s;
+				stroke: $black;
+			}
+			&:hover {
+				background: $p3-clr;
+				i {
+					transition: all 0.4s;
+					color: $white;
+				}
+				svg {
+					transition: all 0.4s;
+					stroke: $white;
+				}
+			}
+		}
+	}
+	&:hover {
+		border-color: $p4-clr;
+		.thumb {
+			img {
+				transform: scale(1.04);
+				border-radius: 10px 70px;
+			}
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		padding: 20px 20px;
+	}
+	@include breakpoint(max-xl) {
+		padding: 18px 16px;
+	}
+}
+// team section style

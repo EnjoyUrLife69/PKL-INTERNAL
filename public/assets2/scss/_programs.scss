@@ -1,0 +1,95 @@
+//Student Counting
+.student-count-item {
+	padding: 44px 20px 44px 70px;
+	box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	.content {
+		h1 {
+			font-size: 70px;
+			margin-bottom: 8px;
+			span {
+				font-size: 70px;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: var(--pra);
+				color: transparent;
+			}
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: var(--pra);
+			color: transparent;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 700;
+			font-family: $heading-font;
+			color: $black;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 30px 20px 30px 30px;
+		gap: 20px;
+		.icon {
+			width: 70px;
+			img {
+				width: 100%;
+			}
+		}
+		.content {
+			h1 {
+				font-size: 48px;
+				span {
+					font-size: 48px;
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 24px 16px 24px 18px;
+		gap: 18px;
+		.icon {
+			width: 50px;
+			img {
+				width: 100%;
+			}
+		}
+		.content {
+			h1 {
+				font-size: 38px;
+				span {
+					font-size: 34px;
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding: 24px 16px 24px 18px;
+		gap: 18px;
+		justify-content: center;
+		.icon {
+			width: 50px;
+			img {
+				width: 100%;
+			}
+		}
+		.content {
+			h1 {
+				font-size: 38px;
+				span {
+					font-size: 34px;
+				}
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}
+//Student Counting

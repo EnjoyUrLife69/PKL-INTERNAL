@@ -1,0 +1,55 @@
+
+:root {
+    
+    --body: #fff;
+    --black: #000;
+    --white: #fff;
+    --p1-clr: #0A6375;
+    --p2-clr: #F7941E;
+    --p3-clr: #ED145B;
+    --p4-clr: #73BE48;
+    --p5-clr: #1CBBB4;
+    --cmnbg: #FFF0E5;
+    
+    --theme: #F39F5F;
+    --theme2: #70A6B1;
+    --header: #385469;
+    --text: #5C707E;
+    --pra: #686868;
+    --text-2: #ffffffcc;
+    --border: #E5E5E5;
+    --border2: #242449;
+    --border3: #5262FF;
+    --bg: #F4EEE5;
+    --bg2: #EFF5F6;
+    --bg3: #70A6B1;
+    --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+}
+
+// Theme Color - Defualt Colors
+$p1-clr: var(--p1-clr);
+$p2-clr: var(--p2-clr);
+$p3-clr: var(--p3-clr);
+$p4-clr: var(--p4-clr);
+$p5-clr: var(--p5-clr);
+$cmnbg: var(--cmnbg);
+
+$black: var(--black);
+$white: var(--white);
+$theme: var(--theme);
+$theme2: var(--theme2);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$pra: var(--text);
+$text: var(--text);
+$text-color: var(--text);
+$text-color-2: var(--text-2);
+$header: var(--header);
+$header-color: var(--header);
+$border-color: var(--border);
+$border-color-2: var(--border2);
+$border-color-3: var(--border3);
+$bg-color: var(--bg);
+$bg-color-2: var(--bg2);
+$bg-color-3: var(--bg3);
+$shadow: var(--box-shadow);

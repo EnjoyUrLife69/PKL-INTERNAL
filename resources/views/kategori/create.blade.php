@@ -42,15 +42,16 @@
                                         </div>
                                     @endif
                                     <div class="form-group row">
-                                        <label for="exampleInputUsername2"  class="col-sm-3 col-form-label">Nama
+                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nama
                                             kategori</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="putih" name="nama_kategori" placeholder="Nama Kategori" required>
+                                            <input type="text" class="form-control" id="putih"
+                                                name="nama_kategori" placeholder="Nama Kategori" required>
                                         </div>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                    <a href="{{url ('kategori')}}" class="btn btn-dark">Cancel</a>
+                                    <a href="{{ url('kategori') }}" class="btn btn-dark">Cancel</a>
                                 </form>
                             </div>
                         </div>

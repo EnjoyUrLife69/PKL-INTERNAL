@@ -1,0 +1,21 @@
+// brand-slider
+.brand-slider {
+	.brand-image {
+		text-align: center;
+		filter: grayscale(100%);
+		@include transition;
+		opacity: 0.4;
+
+		&:hover {
+			filter: initial;
+			opacity: 1;
+		}
+	}
+
+	.swiper-slide.swiper-slide-active {
+		.brand-image {
+			filter: initial;
+			opacity: 1;
+		}
+	}
+}

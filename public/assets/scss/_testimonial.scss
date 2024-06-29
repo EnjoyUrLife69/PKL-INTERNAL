@@ -1,0 +1,63 @@
+//Testimonial Style
+.testimonial-innerbox {
+	padding: 80px 0;
+	position: relative;
+	&::before {
+		background: url(../img/atestimonial/testimonial-big.png) no-repeat center
+			center;
+		background-size: cover;
+		width: 65%;
+		height: 100%;
+		position: absolute;
+		content: "";
+		top: 0;
+		border-radius: 10px;
+	}
+}
+.testimonial-slidewrap01 {
+	.testimonial-item01 {
+		padding: 60px;
+		border-radius: 10px;
+		border: 1px solid #f2f2f2;
+		background: $white;
+		box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+		overflow: hidden;
+		margin-bottom: 1px;
+		.man-info {
+			gap: 20px;
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		.testimonial-item01 {
+			padding: 30px;
+			.man-info {
+				gap: 10px;
+			}
+			.quote-testi {
+				width: 26px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.testimonial-item01 {
+			padding: 20px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		.testimonial-item01 {
+			.cont {
+				h4 {
+					font-size: 16px;
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+}
+.ratting-area {
+	i {
+		color: $p2-clr;
+		font-size: 20px;
+	}
+}
+//Testimonial Style

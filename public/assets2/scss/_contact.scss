@@ -1,0 +1,156 @@
+iframe {
+	width: 100%;
+	height: 500px;
+
+	@include breakpoint(max-md) {
+		height: 400px;
+	}
+	@include breakpoint(max-sm) {
+		height: 300px;
+	}
+}
+
+//Contact Version One
+.contact-infosectionv1 {
+	.contact-call-info {
+		border-radius: 5px;
+		background: var(--White, #fff);
+		box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+		padding: 30px 20px;
+		text-align: center;
+		h5 {
+			margin-bottom: 10px;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.icon {
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			background: $p4-clr;
+			margin: 0 auto 20px;
+			i {
+				color: $white;
+				font-size: 24px;
+			}
+		}
+		@include breakpoint(max-xl) {
+			padding: 20px 20px;
+			.icon {
+				width: 45px;
+				height: 45px;
+				margin: 0 auto 18px;
+				i {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+.contact-contentv2 {
+	i {
+		color: $black !important;
+	}
+}
+.contact-thumbv02 {
+	padding-right: 34px;
+	.thumb-smal {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		img {
+			border-radius: 10px;
+		}
+		animation: updown 2s linear infinite;
+	}
+	.thumbb {
+		max-width: 464px;
+		margin-left: auto;
+		img {
+			border-radius: 10px;
+		}
+	}
+	.badg-count {
+		background: $p2-clr;
+		border-radius: 10px;
+		padding: 22px 20px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+		animation: lf 2s linear infinite;
+		.cont {
+			h4 {
+				font-size: 28px;
+				font-weight: 700;
+				color: $white;
+				span {
+					font-size: 28px;
+					font-weight: 700;
+					color: $white;
+				}
+				margin-bottom: 4px;
+			}
+			.subti {
+				font-size: 20px;
+				font-weight: 500;
+				font-family: $heading-font;
+				color: $white;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding-right: 0;
+		.thumb-smal {
+			top: 20px;
+			left: 10px;
+			width: 120px;
+			img {
+				width: 100%;
+			}
+		}
+		.thumbb {
+			img {
+				width: 100%;
+			}
+		}
+		.badg-count {
+			padding: 18px 18px;
+			gap: 10px;
+			left: 0;
+			bottom: 10px;
+			.cont {
+				h4 {
+					font-size: 24px;
+					span {
+						font-size: 24px;
+					}
+					margin-bottom: 2px;
+				}
+				.subti {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding-right: 0;
+		.thumb-smal {
+			top: 20px;
+			left: 10px;
+			width: 120px;
+			img {
+				width: 100%;
+			}
+		}
+		.thumbb {
+			width: 100%;
+			max-width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
