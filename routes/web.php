@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\TestimoniController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -11,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,4 +22,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/read', [App\Http\Controllers\ReadController::class, 'index'])->name('read');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
+
+Route::resource('kategori', KategoriController::class);
+
+Route::resource('artikel', ArtikelController::class);
+
+Route::resource('testimoni', TestimoniController::class);
+
