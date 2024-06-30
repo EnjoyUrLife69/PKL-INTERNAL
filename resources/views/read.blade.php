@@ -68,7 +68,7 @@
                         <div class="row">
                             @foreach ($artikel as $data)
                                 <div class="col-md-6 col-xl-4 grid-margin stretch-card">
-                                    <a style="text-decoration: none" href="#">
+                                    {{-- <a style="text-decoration: none" href="#"> --}}
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4 class="card-title">{{ $data->judul }}</h4>
@@ -80,7 +80,7 @@
                                                     <div class="preview-list w-100">
                                                         <div class="preview-item p-0">
                                                             <div class="preview-thumbnail">
-                                                                <img src="{{ asset('images/artikel/' . $data->cover) }}"
+                                                                <img src="{{ asset('assets/images/admin.jpg') }}"
                                                                     class="rounded-circle" alt="">
                                                             </div>
                                                             <div class="preview-item-content d-flex flex-grow">
@@ -88,7 +88,7 @@
                                                                     <div
                                                                         class="d-flex d-md-block d-xl-flex justify-content-between">
                                                                         <h6 class="preview-subject">
-                                                                            Admin Sholeh </h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                            Admin</h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                         <p class="text-muted text-small mt-1">
                                                                             {{ $data->tanggal }}</p>
                                                                     </div>
@@ -103,7 +103,7 @@
                                                     {{ $data->kategori->nama_kategori }}
                                             </div>
                                         </div>
-                                    </a>
+                                    {{-- </a> --}}
 
 
                                 </div>
