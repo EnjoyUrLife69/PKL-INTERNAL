@@ -33,7 +33,8 @@
                         <div class="col-md-6 col-xl-7 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Selamat Datang di Dashboard Admin</p>
+                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Our Blogs
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -64,45 +65,45 @@
                     @if ($artikel->isEmpty())
                         <p style="font-size: 20px; text-align: center;">Tidak ada Artikel untuk Kategori ini.</p>
                     @else
-
                         <div class="row">
                             @foreach ($artikel as $data)
                                 <div class="col-md-6 col-xl-4 grid-margin stretch-card">
                                     {{-- <a style="text-decoration: none" href="#"> --}}
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="card-title">{{ $data->judul }}</h4>
-                                                <div class="item">
-                                                    <img src="{{ asset('images/artikel/' . $data->cover) }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="d-flex py-4">
-                                                    <div class="preview-list w-100">
-                                                        <div class="preview-item p-0">
-                                                            <div class="preview-thumbnail">
-                                                                <img src="{{ asset('assets/images/admin.jpg') }}"
-                                                                    class="rounded-circle" alt="">
-                                                            </div>
-                                                            <div class="preview-item-content d-flex flex-grow">
-                                                                <div class="flex-grow">
-                                                                    <div
-                                                                        class="d-flex d-md-block d-xl-flex justify-content-between">
-                                                                        <h6 class="preview-subject">
-                                                                            Admin</h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                        <p class="text-muted text-small mt-1">
-                                                                            {{ $data->tanggal }}</p>
-                                                                    </div>
-                                                                    <p class="text-muted">{{ $data->deskripsi }}</p>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">{{ $data->judul }}</h4>
+                                            <div class="item">
+                                                <img src="{{ asset('images/artikel/' . $data->cover) }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="d-flex py-4">
+                                                <div class="preview-list w-100">
+                                                    <div class="preview-item p-0">
+                                                        <div class="preview-thumbnail">
+                                                            <img src="{{ asset('assets/images/admin.jpg') }}"
+                                                                class="rounded-circle" alt="">
+                                                        </div>
+                                                        <div class="preview-item-content d-flex flex-grow">
+                                                            <div class="flex-grow">
+                                                                <div
+                                                                    class="d-flex d-md-block d-xl-flex justify-content-between">
+                                                                    <h6 class="preview-subject">
+                                                                        Admin</h6>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <p class="text-muted text-small mt-1">
+                                                                        {{ $data->tanggal }}</p>
                                                                 </div>
+                                                                <p class="text-muted">{{ $data->deskripsi }}</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button disabled type="button"
-                                                    class="btn btn-outline-secondary btn-icon-text">
-                                                    {{ $data->kategori->nama_kategori }}
                                             </div>
+                                            <button disabled type="button"
+                                                class="btn btn-outline-secondary btn-icon-text">
+                                                {{ $data->kategori->nama_kategori }}
                                         </div>
+                                    </div>
                                     {{-- </a> --}}
 
 
