@@ -25,7 +25,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-bell-outline"></i>
                 </span>
-                <span class="menu-title">Artikel</span>
+                <span class="menu-title">Our Blogs</span>
             </a>
         </li>
         <li class="nav-item menu-items">
