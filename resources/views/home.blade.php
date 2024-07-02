@@ -24,94 +24,6 @@
         {{-- NAVBAR --}}
         <div class="container-fluid page-body-wrapper">
             @include('include.backend.navbar')
-
-            {{-- ARTIKEL --}}
-            {{-- <div class="main-panel">
-                <div class="content-wrapper">
-                    FILTER
-                    <div class="row">
-                        <div class="col-md-6 col-xl-7 grid-margin stretch-card ml-auto" style="">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Selamat Datang di Dashboard Admin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-5 grid-margin stretch-card ml-auto" style="">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Filter by Category</p>
-                                    <form method="GET" action="{{ route('home') }}">
-                                        <select class="form-control" name="kategori_id" id="putih"
-                                            id="exampleSelectGender">
-                                            <option value=""
-                                                {{ is_null(request()->get('kategori_id')) ? 'selected' : '' }}>
-                                                Tampilkan Semua Artikel</option>
-                                            @foreach ($kategori as $data)
-                                                <option value="{{ $data->id }}"
-                                                    {{ request()->get('kategori_id') == $data->id ? 'selected' : '' }}>
-                                                    {{ $data->nama_kategori }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        <button type="submit" class="btn btn-primary mt-3">Go</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    @if ($artikel->isEmpty())
-                        <p style="font-size: 20px; text-align: center;">Tidak ada Artikel untuk Kategori ini.</p>
-                    @else
-                        <div class="row">
-                            @foreach ($artikel as $data)
-                                <div class="col-md-6 col-xl-4 grid-margin stretch-card">
-                                    <a style="text-decoration: none" href="{{ url('tampil', $data->id) }}">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="card-title">{{ $data->judul }}</h4>
-                                                <div class="item">
-                                                    <img src="{{ asset('images/artikel/' . $data->cover) }}"
-                                                        alt="">
-                                                </div>
-                                                <div class="d-flex py-4">
-                                                    <div class="preview-list w-100">
-                                                        <div class="preview-item p-0">
-                                                            <div class="preview-thumbnail">
-                                                                <img src="{{ asset('images/penulis/' . $data->penulis->foto_profil) }}"
-                                                                    class="rounded-circle" alt="">
-                                                            </div>
-                                                            <div class="preview-item-content d-flex flex-grow">
-                                                                <div class="flex-grow">
-                                                                    <div
-                                                                        class="d-flex d-md-block d-xl-flex justify-content-between">
-                                                                        <h6 class="preview-subject">
-                                                                            {{ $data->penulis->nama_penulis }}</h6>
-                                                                        <p class="text-muted text-small">
-                                                                            {{ $data->tanggal_publikasi }}</p>
-                                                                    </div>
-                                                                    <p class="text-muted">{{ $data->deskripsi }}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button disabled type="button"
-                                                    class="btn btn-outline-secondary btn-icon-text">
-                                                    {{ $data->kategori->nama_kategori }}
-                                            </div>
-                                        </div>
-                                    </a>
-
-
-                                </div>
-                            @endforeach
-
-                        </div>
-                    @endif
-                </div>
-            </div> --}}
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
@@ -120,6 +32,81 @@
                                 <div class="card-body">
                                     <p style="font-size: 30px; text-align: center; margin-top: 2%">Selamat Datang di
                                         Dashboard Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Statistik --}}
+                    <div class="row">
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Testimoni</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">{{$total_testimoni}}</h2>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">Total Testimoni Dari Alumni</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-account-star text-primary ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Artikel</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">{{$total_artikel}}</h2>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">Total Artikel yang ditambahkan</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-book-open-page-variant text-primary ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Kategori Artikel</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">{{$total_kategori}}</h2>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">Jumlah Total data Kategori Artikel</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-book-multiple text-primary ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 grid-margin" style="align-items: center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Pendaftar</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">{{$total_pendaftar}}</h2>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">Jumlah Total Pendaftar Ke Bimbel Ini</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-face text-primary ml-auto"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -138,6 +138,7 @@ class ArtikelController extends Controller
             $img->move('images/artikel', $name);
             $artikel->cover = $name;
         }
+        
         $artikel->deskripsi = $request->deskripsi;
         $artikel->isi = $request->isi;
 

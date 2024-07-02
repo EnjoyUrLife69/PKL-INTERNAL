@@ -1,3 +1,4 @@
+<!-- Caroussel -->
 <section class="bannerv2-section position-relative fix" id="scrollUp">
     <div class="container">
         <div class="carousel" data-aos="fade-up" >
@@ -196,7 +197,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="student-count-item">
                     <div class="icon">
-                        <img src="#" alt="img">
+                        <img src="{{ asset('assets2/img/aicon/team-count4.png') }}" alt="img">
                     </div>
                     <div class="content">
                         <h1>
@@ -345,105 +346,6 @@
         </div>
     </div>
     <!-- Element -->
-</section>
-
-<!-- Clone Component Section Start -->
-<section class="clone-component-section space-top cmn-bg overflow-hidden position-relative">
-    <div class="container">
-        <!-- Brand Sponsor -->
-        <div class="swiper brand-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="brand-image">
-                        <img src="{{ asset('assets2/img/aclient/sponsor1.png') }}" alt="brand-img">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="brand-image">
-                        <img src="{{ asset('assets2/img/aclient/sponsor2.png') }}" alt="brand-img">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="brand-image">
-                        <img src="{{ asset('assets2/img/aclient/sponsor3.png') }}" alt="brand-img">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="brand-image">
-                        <img src="{{ asset('assets2/img/aclient/sponsor4.png') }}" alt="brand-img">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="brand-image">
-                        <img src="{{ asset('assets2/img/aclient/sponsor5.png') }}" alt="brand-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Product Proceesure -->
-        <div class="product-procesure space-top">
-            <div class="container">
-                <div class="section-title product-title text-center">
-                    <span class="sub-title wow fadeInUp p2-clr">
-                        Products
-                    </span>
-                    <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
-                        Invest in your future invest in <br> education Where Kids
-                    </h3>
-                </div>
-                <div class="row flex-row-reverse align-items-center justify-content-between g-4">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="products-thumb w-100 wow fadeInDown" data-wow-delay="0.6s">
-                            <img src="{{ asset('assets2/img/aclient/clode-car.png') }}" alt="img"
-                                class="w-100">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="product-clode-content">
-                            <div class="section-title">
-                                <span class="sub-title wow fadeInUp black">
-                                    Stay With Us
-                                </span>
-                                <h4 class="m-title wow fadeInUp black mb-sm-3 mb-2" data-wow-delay=".3s">
-                                    Empowering Children Through <br> Education Igni Curiosity
-                                </h4>
-                                <h3 class="p3-clr mb-20">
-                                    29.80$
-                                </h3>
-                                <p class="mb-40 pra wow fadeInUp" data-wow-delay=".4s">
-                                    Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum
-                                    facilisis sem. Imperdiet massa
-                                    turpis sit proin
-                                    metus volutpat.Lorem ipsum dolor sit amet consectetur.
-                                </p>
-                                <div class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <a href="contact.html" class="theme-btn round100 p3-bg">
-                                        <span class="white fw-medium">
-                                            Buy Now
-                                        </span>
-                                    </a>
-                                    <a href="contact.html" class="theme-btn cart-btn round100">
-                                        <span class="p3-clr fw-medium">
-                                            Add to cart
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Sum Uncle -->
-    <div class="sun-uncle-section space-top position-relative overflow-hidden">
-        <img src="{{ asset('assets2/img/aclient/clone-object.png') }}" alt="img" class="w-100 sun-bg">
-        <div class="sun-unlce text-center">
-            <img src="{{ asset('assets2/img/aclient/clone-sun.png') }}" alt="img">
-        </div>
-    </div>
-    <!-- Element-->
-    <img src="{{ asset('assets2/img/aclient/bard.png') }}" alt="img" class="bard-element d-md-block d-none">
 </section>
 
 <!-- Carft Section Start -->

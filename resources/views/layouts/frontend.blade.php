@@ -254,7 +254,7 @@
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
-        const slideInterval = 10000; // Interval waktu dalam milidetik (10 detik)
+        const slideInterval = 30000; // Interval waktu dalam milidetik (10 detik)
 
         function showSlide(index) {
             slides[currentSlide].classList.remove('active', 'next', 'prev');

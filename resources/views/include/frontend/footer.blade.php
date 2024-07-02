@@ -1,4 +1,4 @@
- {{-- <!--<< Footer Section Start >>-->
+ <!--<< Footer Section Start >>-->
     <footer class="footer-section overflow-hidden position-relative footer-style2 p1-bg">
         <div class="footer-widgets-wrapper">
             <div class="container">
@@ -7,7 +7,7 @@
                         <div class="single-footer-widget">
                             <div class="widget-heads">
                                 <a href="index.html" class="footer-logo">
-                                    <img src="{{asset ('frontend/assets/img/logo/logo-light.png')}}" alt="logo-img">
+                                    <img src="{{asset ('assets2/img/logo/logo-putih.png')}}" alt="logo-img">
                                 </a>
                             </div>
                             <div class="footer-content">
@@ -40,22 +40,22 @@
                             <ul class="list-area">
                                 <li>
                                     <a href="contact.html">
-                                        Refund Policy
+                                        Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="service.html">
-                                        Careers
+                                        Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="contact.html">
-                                        Privacy & Policy
+                                        Blog
                                     </a>
                                 </li>
                                 <li>
                                     <a href="contact.html">
-                                        Terms & Conditions
+                                        Daftar
                                     </a>
                                 </li>
                             </ul>
@@ -92,12 +92,6 @@
                             <p class="white ">
                                 Subscribe our newsletter to get our latest update
                             </p>
-                            <form action="#" class="footer-form">
-                                <input type="text" placeholder="Enter Your Email">
-                                <button type="button">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -134,7 +128,7 @@
             </a>
         </div>
         <!-- Element -->
-        <img src="{{asset ('frontend/assets/img/footer/f-apple.png')}}" alt="img" class="footer-apple position-absolute">
-        <img src="{{asset ('frontend/assets/img/footer/f-cut.png')}}" alt="img" class="footer-cut position-absolute">
+        <img src="{{asset ('assets2/img/footer/f-apple.png')}}" alt="img" class="footer-apple position-absolute">
+        <img src="{{asset ('assets2/img/footer/f-cut.png')}}" alt="img" class="footer-cut position-absolute">
         <!-- Element -->
-    </footer> --}}
+    </footer>
