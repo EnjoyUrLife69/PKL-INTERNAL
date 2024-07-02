@@ -11,10 +11,10 @@
                                 </a>
                             </div>
                             <div class="footer-content">
-                                <p class="pre-pragraph">
-                                    Phasellus ultricies aliquam volutpat
-                                    ullamcorper laoreet neque, a lacinia
-                                    curabitur lacinia mollis
+                                <p class="pre-pragraph" style="text-align: left">
+                                     <b style="color: orange">BimbelKu</b> berkomitmen membantu siswa
+                                     meraih prestasi terbaik dengan metode pengajaran inovatif 
+                                     dan tim pengajar berpengalaman.
                                 </p>
                                 <div class="social-wrapper d-flex align-items-center">
                                     <a href="#" class="white"><i class="white fab fa-facebook-f"></i></a>
@@ -102,7 +102,7 @@
                 <div
                     class="footer-wrapper d-md-flex d-grid gap-md-0 gap-2 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                     <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                        &copy; Yoursitename 2024 | All Rights Reserved
+                        &copy; BimbelKu 2024 | All Rights Reserved
                     </p>
                     <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                         <li>
