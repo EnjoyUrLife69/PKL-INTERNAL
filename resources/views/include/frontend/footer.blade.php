@@ -1,4 +1,4 @@
- <!--<< Footer Section Start >>-->
+ {{-- <!--<< Footer Section Start >>-->
     <footer class="footer-section overflow-hidden position-relative footer-style2 p1-bg">
         <div class="footer-widgets-wrapper">
             <div class="container">
@@ -137,4 +137,4 @@
         <img src="{{asset ('frontend/assets/img/footer/f-apple.png')}}" alt="img" class="footer-apple position-absolute">
         <img src="{{asset ('frontend/assets/img/footer/f-cut.png')}}" alt="img" class="footer-cut position-absolute">
         <!-- Element -->
-    </footer>
+    </footer> --}}

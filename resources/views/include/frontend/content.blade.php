@@ -1,39 +1,41 @@
-<!-- Hero Section Start -->
 <section class="bannerv2-section position-relative fix" id="scrollUp">
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-6 col-md-9">
-                <div class="herov2-content position-relative">
-                    <h1 class="mb-lg-4 mb-3 wow fadeInUp" data-wow-delay=".3s">
-                        Building a Better <br> Future through
-                    </h1>
-                    <p class="mb-40 pra wow fadeInUp" data-wow-delay=".5s">
-                        Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                        Imperdiet massa turpis sit proin
-                        metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-                        dictum
-                    </p>
-                    <div class="heros-btn">
-                        <a href="about.html" class="theme-btn round100 p2-bg">
-                            <span class="white fw-medium">
-                                Read More
-                            </span>
-                        </a>
-                    </div>
-                    <!-- Element -->
-                    <img src="{{ asset('assets2/img/abanner/reg.png') }}" alt="img" class="small-aregtengle">
+    <div class="container">
+        <div class="carousel" data-aos="fade-up" >
+            <div class="carousel-slide active">
+                <div class="content">
+                    <h2 data-wow-delay=".3s">Informasi Slide Pertama</h2>
+                    <p>Ini adalah informasi untuk slide pertama.</p>
+                    <br><br><br><br><br><br><br>
+                     <a href="#" class="theme-btn round100 p2-bg" >
+                                <span class="white fw-medium" style="hight: 10px;">
+                                    Read More
+                                </span>
+                    </a>
+                </div>
+                <img src="https://via.placeholder.com/400x300" data-wow-delay=".5s" alt="Gambar Slide Pertama">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/400x300" alt="Gambar Slide Kedua">
+                <div class="content">
+                    <h2>Informasi Slide Kedua</h2>
+                    <p>Ini adalah informasi untuk slide kedua.</p>
+                    <br><br><br><br><br><br><br><br><br><br>
+                     <a href="#" class="theme-btn round100 p2-bg" style="">
+                                <span class="white fw-medium">
+                                    Read More
+                                </span>
+                    </a>
                 </div>
             </div>
+            <button class="arrow left" onclick="changeSlide(-1)">&#9664;</button>
+            <button class="arrow right" onclick="changeSlide(1)">&#9654;</button>
         </div>
     </div>
-    <!-- Element -->
-    <img src="{{ asset('assets2/img/abanner/banner-v2-thumb.png') }}" alt="img" class="banner-shape wow fadeInLeft"
-        data-wow-delay=".3s">
     <img src="{{ asset('assets2/img/abanner/banner-shadow.png') }}" alt="img" class="banner-shadow">
 </section>
 
 <!-- About Activities Section Start -->
-<section class="about-sectionv02 space-top position-relative overflow-hidden" >
+<section class="about-sectionv02 space-top position-relative overflow-hidden" style="margin-top: -6%">
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-6 col-md-9">
@@ -139,8 +141,7 @@
         </div>
         <br><br><br>
         <div class="heros-btn">
-            <a href="#" style="align-items: center; width: 100%; height: 50px;"
-                class="theme-btn round100 p2-bg">
+            <a href="#" style="align-items: center; width: 100%; height: 50px;" class="theme-btn round100 p2-bg">
                 <b>Load More Article's</b>
             </a>
         </div>
