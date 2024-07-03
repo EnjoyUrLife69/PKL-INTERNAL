@@ -1,16 +1,16 @@
 <!-- Caroussel -->
 <section class="bannerv2-section position-relative fix" id="scrollUp">
     <div class="container">
-        <div class="carousel" data-aos="fade-up" >
+        <div class="carousel" data-aos="fade-up">
             <div class="carousel-slide active">
                 <div class="content">
                     <h2 data-wow-delay=".3s">Informasi Slide Pertama</h2>
                     <p>Ini adalah informasi untuk slide pertama.</p>
                     <br><br><br><br><br><br><br>
-                     <a href="#" class="theme-btn round100 p2-bg" >
-                                <span class="white fw-medium" style="hight: 10px;">
-                                    Read More
-                                </span>
+                    <a href="#" class="theme-btn round100 p2-bg">
+                        <span class="white fw-medium" style="hight: 10px;">
+                            Read More
+                        </span>
                     </a>
                 </div>
                 <img src="https://via.placeholder.com/400x300" data-wow-delay=".5s" alt="Gambar Slide Pertama">
@@ -21,10 +21,10 @@
                     <h2>Informasi Slide Kedua</h2>
                     <p>Ini adalah informasi untuk slide kedua.</p>
                     <br><br><br><br><br><br><br><br><br><br>
-                     <a href="#" class="theme-btn round100 p2-bg" style="">
-                                <span class="white fw-medium">
-                                    Read More
-                                </span>
+                    <a href="#" class="theme-btn round100 p2-bg" style="">
+                        <span class="white fw-medium">
+                            Read More
+                        </span>
                     </a>
                 </div>
             </div>
@@ -118,31 +118,37 @@
         </div>
 
         <div class="row g-lg-4 g-4">
-            @foreach ($artikel as $data)
+            @php
+                $limitedArtikel = $artikel->take(3);
+            @endphp
+            @foreach ($limitedArtikel as $data)
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="news-card-items">
-                        <div style="height: 250px;" class="news-image mb-xxl-4 mb-4">
-                            <img src="{{ asset('images/artikel/' . $data->cover) }}" alt="img">
+                    <a href="{{ url('tampil', $data->id) }}">
+                        <div class="news-card-items">
+                            <div style="height: 250px;" class="news-image mb-xxl-4 mb-4">
+                                <img src="{{ asset('images/artikel/' . $data->cover) }}" alt="img">
+                            </div>
+                            <div class="news-content">
+                                <h4 class="mb-3">
+                                    <a href="blog-details.html" class="black">
+                                        {{ $data->judul }}
+                                    </a>
+                                </h4>
+                                <p class="pra mb-4">
+                                    {{ $data->deskripsi }}
+                                </p>
+                                <a href="{{ url('tampil', $data->id) }}" class="theme-btn-2 fw-medium black">Read More
+                                    <i class="fas fa-long-arrow-right p2-clr"></i></a>
+                            </div>
                         </div>
-                        <div class="news-content">
-                            <h4 class="mb-3">
-                                <a href="blog-details.html" class="black">
-                                    {{ $data->judul }}
-                                </a>
-                            </h4>
-                            <p class="pra mb-4">
-                                {{ $data->deskripsi }}
-                            </p>
-                            <a href="blog-details.html" class="theme-btn-2 fw-medium black">Read More <i
-                                    class="fas fa-long-arrow-right p2-clr"></i></a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
         <br><br><br>
         <div class="heros-btn">
-            <a href="#" style="align-items: center; width: 100%; height: 50px;" class="theme-btn round100 p2-bg">
+            <a href="{{ route('blog') }}" style="align-items: center; width: 100%; height: 50px;"
+                class="theme-btn round100 p2-bg">
                 <b>Load More Article's</b>
             </a>
         </div>
@@ -218,7 +224,7 @@
             <div class="col-lg-6">
                 <div class="section-title text-center">
                     <span class="sub-title wow fadeInUp p2-clr">
-                        Extra Curricular
+                        Testimoni Alumni
                     </span>
                     <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
                         Building a strong foundation <br> through education

@@ -16,14 +16,14 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li class="has-dropdown active menu-thumb">
-                                        <a href="index.html">Home</a>
+                                        <a href="{{ route('welcome') }}">Home</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About Us</a>
                                     </li>
 
                                     <li>
-                                        <a href="blog.html"> Blog </a>
+                                        <a href="{{ route('blog') }}"> Blog </a>
                                     </li>
                                     <li>
                                         <a href="#">Daftar</a>

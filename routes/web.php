@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\TampilController;
 use App\Http\Controllers\TestimoniController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,13 +22,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 Route::get('/read', [App\Http\Controllers\ReadController::class, 'index'])->name('read');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 
+use Illuminate\Support\Facades\Route;
+
+Route::get('/tampil/{id}', [TampilController::class, 'tampil']);
+ 
 Route::resource('kategori', KategoriController::class);
 
 Route::resource('artikel', ArtikelController::class);
 
 Route::resource('testimoni', TestimoniController::class);
-
