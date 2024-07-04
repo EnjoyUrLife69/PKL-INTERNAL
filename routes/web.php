@@ -29,7 +29,7 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name(
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/tampil/{id}', [TampilController::class, 'tampil']);
+Route::get('/tampil/{id}', [TampilController::class, 'index']);
  
 Route::resource('kategori', KategoriController::class);
 

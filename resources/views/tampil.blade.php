@@ -47,6 +47,13 @@
 </head>
 
 <body>
+    @php
+        use Carbon\Carbon;
+        Carbon::setLocale('id');
+
+        $formattedDate = Carbon::parse($artikel->tanggal)->translatedFormat('d F Y');
+    @endphp
+
     {{-- Header --}}
     @include('include.frontend.header')
     {{-- Header End --}}
@@ -73,13 +80,13 @@
                                     <div style="margin-top: 30px; font-size: 14px; margin-left: -8px;">Writed By :
                                         <b>Admin</b><br>
                                         Category :
-                                        <b>{{ $artikel->kategori->nama_kategori}}</b>
+                                        <b>{{ $artikel->kategori->nama_kategori }}</b>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="col-md-5">
-                                    <div style="margin-top: 30px; font-size: 14px; text-align: end;">
-                                        <b>{{ $artikel->tanggal }}</b>
+                                    <div style="margin-top: 30px; font-size: 15px; text-align: end;">
+                                        <b>{{ $formattedDate }}</b>
                                     </div>
                                 </div>
                             </div>
@@ -127,12 +134,30 @@
                     <div class="card" style="margin-top: 10px; box-shadow: 0 0 5px 5px rgba(213, 213, 213, 0.3);">
                         <div class="card-body">
                             <b>Latest News</b>
-                            <br><br><br><br><br><br><br><br><br>
+                            <hr style="border: none; border-top: 3px solid orange;">
+                            @php
+                                $limitedArtikel = $artikelLainnya;
+                            @endphp
+                            @foreach ($limitedArtikel as $data)
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="{{ asset('images/artikel/' . $data->cover) }}"
+                                            style="width: 55px; height: 55px; border-radius: 50%; border: 1px solid black;"
+                                            alt="img">
+                                    </div>
+                                    <div class="col-md-9" style="margin-left: 13px;">
+                                        <a href="{{ url('tampil', $data->id) }}" class="black">
+                                            <b>{{ $data->judul }}</b>
+                                        </a><br>
+                                        <b style="font-size: 12px; color: rgb(174, 170, 170)">{{ $formattedDate }}</b>
+
+                                    </div>
+                                </div><br>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     @include('include.frontend.footer')
 
