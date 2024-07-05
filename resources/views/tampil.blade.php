@@ -123,7 +123,7 @@
                                 dan tim pengajar berpengalaman.
                             </p>
                         </div><br>
-                        <a href="#" class="theme-btn round100 p2-bg"
+                        <a href="{{ route('about') }}" class="theme-btn round100 p2-bg"
                             style="height: 40px; width: 40%; margin-left: 105px; display: flex; align-items: center; justify-content: center;">
                             <span class="white fw-medium">
                                 Read More

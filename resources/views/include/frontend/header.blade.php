@@ -19,14 +19,14 @@
                                         <a href="{{ route('welcome') }}">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="{{ route('about') }}">About Us</a>
                                     </li>
 
                                     <li>
                                         <a href="{{ route('blog') }}"> Blog </a>
                                     </li>
                                     <li>
-                                        <a href="#">Daftar</a>
+                                        <a href="{{ route('daftar') }}">Daftar</a>
                                     </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </ul>
                             </nav>

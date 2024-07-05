@@ -33,7 +33,8 @@
                         <div class="col-md-6 col-xl-7 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Halaman Data Artikel</p>
+                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Halaman Data Artikel
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -61,80 +62,82 @@
                         </div>
                     </div>
                     @if (session('success'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('success') }}
-                                    </div>
-                                @endif
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     @if ($artikel->isEmpty())
                         <p style="font-size: 20px; text-align: center;">Tidak ada Artikel untuk Kategori ini.</p>
                     @else
-                    <div class="row">
-                        <div class="col-lg-12 grid-margin stretch-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Tabel Artikel</h4>
-                                        <a href="{{ route('artikel.create') }}" class="btn btn-primary">+ Add Data</a>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th><b>
-                                                            <h5>No</h5>
-                                                        </b></th>
-                                                    <th><b>
-                                                            <h5>Judul Artikel</h5>
-                                                        </b></th>
-                                                    <th><b>
-                                                            <h5>Tanggal Publikasi</h5>
-                                                        </b></th>
-                                                    <th><b>
-                                                            <h5>Kategori</h5>
-                                                        </b></th>
-                                                    <th><b>
-                                                            <h5>Cover</h5>
-                                                        </b></th>
-                                                    <th><b>
-                                                            <h5>Action</h5>
-                                                        </b></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @php $no=1; @endphp
-                                                @foreach ($artikel as $data)
-                                                    <tr class="odd gradeX">
-                                                        <td>{{ $no++ }}</td>
-                                                        <td>{{ $data->judul }}</td>
-                                                        <td>{{ $data->tanggal}}</td>
-                                                        <td>{{ $data->kategori->nama_kategori}}</td>
-                                                        <td>
-                                                            <img src="{{asset('images/artikel/' . $data->cover) }}" width="100">    
-                                                        </td>
-                                                        <form action="{{ route('artikel.destroy', $data->id) }}"
-                                                            method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <td>
-                                                                <a href="{{ route('artikel.edit', $data->id) }}"
-                                                                    class="btn  btn-success">Edit</a>
-                                                                <a href="{{ route('artikel.show', $data->id) }}"
-                                                                    class="btn  btn-warning">Detail</a>
-                                                                <button class="btn  btn-danger" type="submit"
-                                                                    onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
-                                                                    Delete
-                                                                </button>
-                                                            </td>
-                                                        </form>
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h4 class="card-title">Tabel Artikel</h4>
+                                            <a href="{{ route('artikel.create') }}" class="btn btn-primary">+ Add
+                                                Data</a>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th><b>
+                                                                <h5>No</h5>
+                                                            </b></th>
+                                                        <th><b>
+                                                                <h5>Judul Artikel</h5>
+                                                            </b></th>
+                                                        <th><b>
+                                                                <h5>Tanggal Publikasi</h5>
+                                                            </b></th>
+                                                        <th><b>
+                                                                <h5>Kategori</h5>
+                                                            </b></th>
+                                                        <th><b>
+                                                                <h5>Cover</h5>
+                                                            </b></th>
+                                                        <th><b>
+                                                                <h5>Action</h5>
+                                                            </b></th>
                                                     </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
+                                                </thead>
+                                                <tbody>
+                                                    @php $no=1; @endphp
+                                                    @foreach ($artikel as $data)
+                                                        <tr class="odd gradeX">
+                                                            <td>{{ $no++ }}</td>
+                                                            <td>{{ $data->judul }}</td>
+                                                            <td>{{ $data->formatted_tanggal }}</td>
+                                                            <td>{{ $data->kategori->nama_kategori }}</td>
+                                                            <td>
+                                                                <img src="{{ asset('images/artikel/' . $data->cover) }}"
+                                                                    width="100">
+                                                            </td>
+                                                            <form action="{{ route('artikel.destroy', $data->id) }}"
+                                                                method="POST">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <td>
+                                                                    <a href="{{ route('artikel.edit', $data->id) }}"
+                                                                        class="btn  btn-success">Edit</a>
+                                                                    <a href="{{ route('artikel.show', $data->id) }}"
+                                                                        class="btn  btn-warning">Detail</a>
+                                                                    <button class="btn  btn-danger" type="submit"
+                                                                        onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                                        Delete
+                                                                    </button>
+                                                                </td>
+                                                            </form>
+                                                        </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     @endif
                 </div>
             </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Artikel;
 use App\Models\Kategori;
+use Carbon\Carbon;
+Carbon::setLocale('id');
 
 use Illuminate\Http\Request;
 
@@ -28,6 +30,11 @@ class ArtikelController extends Controller
             // Jika tidak, ambil semua artikel
             $artikel = Artikel::orderBy('created_at', 'desc')->get();
 
+        }
+
+        // Menambahkan formatted_tanggal pada setiap artikel
+        foreach ($artikel as $data) {
+            $data->formatted_tanggal = Carbon::parse($data->tanggal)->translatedFormat('l, d F Y');
         }
 
         return view('artikel.index', compact('artikel', 'kategori', 'id_kategori'));
@@ -138,7 +145,7 @@ class ArtikelController extends Controller
             $img->move('images/artikel', $name);
             $artikel->cover = $name;
         }
-        
+
         $artikel->deskripsi = $request->deskripsi;
         $artikel->isi = $request->isi;
 

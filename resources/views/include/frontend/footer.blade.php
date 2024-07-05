@@ -44,7 +44,7 @@
                                  </a>
                              </li>
                              <li>
-                                 <a href="service.html">
+                                 <a href="{{ route('about') }}">
                                      Profile
                                  </a>
                              </li>
@@ -54,7 +54,7 @@
                                  </a>
                              </li>
                              <li>
-                                 <a href="contact.html">
+                                 <a href="{{ route('daftar') }}">
                                      Daftar
                                  </a>
                              </li>

@@ -22,7 +22,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+Route::get('/daftar', [App\Http\Controllers\DaftarController::class, 'index'])->name('daftar');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/read', [App\Http\Controllers\ReadController::class, 'index'])->name('read');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
@@ -30,7 +34,7 @@ Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name(
 use Illuminate\Support\Facades\Route;
 
 Route::get('/tampil/{id}', [TampilController::class, 'index']);
- 
+
 Route::resource('kategori', KategoriController::class);
 
 Route::resource('artikel', ArtikelController::class);
