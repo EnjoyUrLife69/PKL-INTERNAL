@@ -29,7 +29,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('pendaftar.index') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-face"></i>
                 </span>
@@ -46,16 +46,16 @@
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{route ('artikel.index')}}">Artikel</a>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('artikel.index') }}">Artikel</a>
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="{{ route('kategori.index') }}">Kategori</a></li>
                     <li class="nav-item"> <a class="nav-link" href="{{ route('testimoni.index') }}">Testimoni </a></li>
                 </ul>
             </div>
         </li>
-        <li class="nav-item menu-items" style="position: absolute; bottom: 0; width: 19%;" >
-    
-            <a class="nav-link" href="{{route ('welcome')}}">
+        <li class="nav-item menu-items" style="position: absolute; bottom: 0; width: 19%;">
+
+            <a class="nav-link" href="{{ route('welcome') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-arrow-top-left"></i>
                 </span>

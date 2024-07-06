@@ -14,7 +14,8 @@ class PendaftarController extends Controller
      */
     public function index()
     {
-        //
+        $pendaftar = Pendaftar::all();
+        return view('pendaftar.index', compact('pendaftar'));
     }
 
     /**
@@ -24,7 +25,9 @@ class PendaftarController extends Controller
      */
     public function create()
     {
-        //
+        $pendaftar = Pendaftar::all();
+        return view('pendaftar.create', compact('pendaftar'));
+
     }
 
     /**
@@ -35,7 +38,19 @@ class PendaftarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pendaftar = new pendaftar;
+        $pendaftar->nama = $request->nama;
+        $pendaftar->jenis_kelamin = $request->jenis_kelamin;
+        $pendaftar->kelas = $request->kelas;
+        $pendaftar->asal_sekolah = $request->asal_sekolah;
+        $pendaftar->nomor_telp_siswa = $request->nomor_telp_siswa;
+        $pendaftar->nomor_telp_ortu = $request->nomor_telp_ortu;
+        $pendaftar->email = $request->email;
+
+        $pendaftar->save();
+
+        return redirect()->route('pendaftar.index')->with('success', 'Data berhasil ditambahkan');
+
     }
 
     /**
@@ -44,9 +59,10 @@ class PendaftarController extends Controller
      * @param  \App\Models\Pendaftar  $pendaftar
      * @return \Illuminate\Http\Response
      */
-    public function show(Pendaftar $pendaftar)
+    public function show($id)
     {
-        //
+        $pendaftar = Pendaftar::FindOrFail($id);
+        return view('pendaftar.show', compact('pendaftar'));
     }
 
     /**
@@ -55,9 +71,10 @@ class PendaftarController extends Controller
      * @param  \App\Models\Pendaftar  $pendaftar
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pendaftar $pendaftar)
+    public function edit($id)
     {
-        //
+        $pendaftar = Pendaftar::FindOrFail($id);
+        return view('pendaftar.edit', compact('pendaftar'));
     }
 
     /**
@@ -67,9 +84,21 @@ class PendaftarController extends Controller
      * @param  \App\Models\Pendaftar  $pendaftar
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pendaftar $pendaftar)
+    public function update(Request $request, $id)
     {
-        //
+        $pendaftar = Pendaftar::FindOrFail($id);
+        $pendaftar->nama = $request->nama;
+        $pendaftar->jenis_kelamin = $request->jenis_kelamin;
+        $pendaftar->kelas = $request->kelas;
+        $pendaftar->asal_sekolah = $request->asal_sekolah;
+        $pendaftar->nomor_telp_siswa = $request->nomor_telp_siswa;
+        $pendaftar->nomor_telp_ortu = $request->nomor_telp_ortu;
+        $pendaftar->email = $request->email;
+
+        $pendaftar->save();
+
+        return redirect()->route('pendaftar.index')->with('success', 'Data berhasil Di Edit');
+
     }
 
     /**
@@ -80,6 +109,7 @@ class PendaftarController extends Controller
      */
     public function destroy(Pendaftar $pendaftar)
     {
-        //
+        $pendaftar->delete();
+        return redirect()->route('pendaftar.index')->with('success', 'Data Berhasil Di Hapuss');
     }
 }

@@ -16,8 +16,12 @@ return new class extends Migration
         Schema::create('pendaftars', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama');
-            $table->string('jabatan');
-            $table->longtext('pesan');
+            $table->string('jenis_kelamin');
+            $table->string('kelas');
+            $table->string('asal_sekolah');
+            $table->BigInteger('nomor_telp_siswa');
+            $table->BigInteger('nomor_telp_ortu');
+            $table->string('email');
             $table->timestamps();
         });
     }

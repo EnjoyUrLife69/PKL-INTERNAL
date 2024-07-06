@@ -45,11 +45,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Jabatan
+                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Pencapaian
                                             </label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="putih" name="jabatan"
-                                                placeholder="Jabatan" required>
+                                                placeholder="Pencapaian" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">

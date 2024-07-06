@@ -162,7 +162,7 @@
                         <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam ex nesciunt
                             laboriosam praesentium eius itaque error. Porro, error voluptates!</b>
                     </p><br>
-                    <a href="#">
+                    <a href="{{ route('daftar-form') }}">
                         <button class="button-37" style="color: black; font-family:">
                             Daftar Sekarang
                         </button>

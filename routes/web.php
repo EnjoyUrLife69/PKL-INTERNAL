@@ -4,6 +4,7 @@ use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\TampilController;
 use App\Http\Controllers\TestimoniController;
+use App\Http\Controllers\PendaftarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Auth::routes();
 
 
 Route::get('/daftar', [App\Http\Controllers\DaftarController::class, 'index'])->name('daftar');
+Route::get('/daftar-form', [App\Http\Controllers\Daftar2Controller::class, 'index'])->name('daftar-form');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index'])->name('blog');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
@@ -40,3 +42,6 @@ Route::resource('kategori', KategoriController::class);
 Route::resource('artikel', ArtikelController::class);
 
 Route::resource('testimoni', TestimoniController::class);
+
+Route::resource('pendaftar', PendaftarController::class);
+
