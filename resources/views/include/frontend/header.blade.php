@@ -6,7 +6,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="index.html" class="header-logo">
-                            <img src="{{ asset('assets2/img/logo/logo4.png') }}" alt="logo-img">
+                            <img src="{{ asset('assets2/img/logo/logo5.png') }}" alt="logo-img">
                         </a>
                     </div>
                 </div>

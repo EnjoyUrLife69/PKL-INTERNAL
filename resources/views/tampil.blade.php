@@ -114,7 +114,7 @@
                 <div class="col-md-6 col-xl-4">
                     <div class="card" style="box-shadow: 0 0 5px 5px rgba(213, 213, 213, 0.3);">
                         <div class="card-body" style="margin-top: 5px; margin-left: 55px;">
-                            <img src="{{ asset('assets2/img/logo/logo4.png') }}" alt="logo-img">
+                            <img src="{{ asset('assets2/img/logo/logo5.png') }}" alt="logo-img">
                         </div>
                         <div class="text" style="margin-left: 30px;">
                             <p class="pre-pragraph" style="text-align: left">
