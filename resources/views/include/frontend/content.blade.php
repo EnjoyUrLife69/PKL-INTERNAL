@@ -4,16 +4,19 @@
         <div class="carousel" data-aos="fade-up">
             <div class="carousel-slide active">
                 <div class="content">
-                    <h2 data-wow-delay=".3s">Informasi Slide Pertama</h2>
-                    <p>Ini adalah informasi untuk slide pertama.</p>
-                    <br><br><br><br><br><br><br>
+                    <br><br><br>
+                    <h2 data-wow-delay=".3s">Explore Excellence with <b style="color: orange">BimbelKu</b></h2><br>
+                    <p style="font-size: 20px;"><b style="color: rgb(157, 136, 98);">BimbelKu</b> fokus pada peningkatan prestasi
+                        akademik di bidang Bahasa Inggris dan Matematika
+                        dengan bimbingan dari pengajar berpengalaman dan metode pengajaran inovatif.</p>
+                    <br>
                     <a href="#" class="theme-btn round100 p2-bg">
                         <span class="white fw-medium" style="hight: 10px;">
                             Read More
                         </span>
                     </a>
                 </div>
-                <img src="https://via.placeholder.com/400x300" data-wow-delay=".5s" alt="Gambar Slide Pertama">
+                <img src="{{ asset('assets2/img/aicon/vector2.png') }}" data-wow-delay=".5s" alt="Gambar Slide Pertama" style="margin-top: -2%; height: 40%;">
             </div>
             <div class="carousel-slide">
                 <img src="https://via.placeholder.com/400x300" alt="Gambar Slide Kedua">
