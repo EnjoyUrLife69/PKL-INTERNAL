@@ -49,7 +49,7 @@
             height: 97px;
             position: fixed;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
 
         .poppins-medium {
@@ -92,7 +92,6 @@
             background-color: #F7941E;
             position: fixed;
             top: 0;
-            z-index: -1;
         }
 
         /* button */
@@ -129,6 +128,8 @@
                 padding: 10px 30px;
             }
         }
+
+        /* end button */
     </style>
 
 
@@ -175,6 +176,53 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container"
+            style="width: 90%;  margin-top: 40%;height: 500px; margin-right: auto; margin-left: auto;">
+            <h3 style="font-size: 35px ;text-align: center; color: black; font-weight: 400;">ABOUT US</h3>
+            <hr
+                style="border-radius: 8px; margin-top: 5px; margin-right: auto; margin-left: auto; border: none; height: 5px; width: 20%; background-color: #FFA500">
+            <center>
+                <p style="margin-top: 40px;">BIMBELKU SEBAGAI LEMBAGA BIMBINGAN BELAJAR "TERPERCAYA"</p>
+            </center><br><br>
+            <div class="row">
+                <div class="col-md-6 col-xl-6">
+                    <h2 style="font-size: 40px;font-weight: 500">Peluang sukses besar! Ingin cepat pintar???</h2>
+                    <hr style="width: 40% ; border: none; height: 2px; background-color: rgb(124, 123, 121)">
+                    <p style="color: rgb(139, 139, 139); margin-top: 35px">BIMBELKU SIAP MENCETAK SISWA-SISWI
+                        BERPRESTASI SESUAI KEBUTUHAN AKADEMIK</p>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="card"
+                        style="background-color: #f19f65; height: 80px; border: none; width: 70%; margin-left: 2px; border-radius: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <img src="{{ asset('assets2/img/logo/eng.svg') }}"
+                                    style="width: 53%; margin-top: 10px; margin-left: 30px;">
+                            </div>
+                            <div class="col-md-6 col-xl-8">
+                                <h4 style="margin-top: 23px; margin-left: -10px;">English Language</h4>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="card"
+                        style="background-color: #f19f65; height: 80px; border: none; width: 65%; margin-left: auto; border-radius: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <img src="{{ asset('assets2/img/logo/math.svg') }}"
+                                    style="width: 53%; margin-top: 13px; margin-left: 30px;">
+                            </div>
+                            <div class="col-md-6 col-xl-8">
+                                <h4 style="margin-top: 25px; margin-left: -10px;">Mathematics</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section><br><br>
+
+    @include('include.frontend.footer')
 
 
 
