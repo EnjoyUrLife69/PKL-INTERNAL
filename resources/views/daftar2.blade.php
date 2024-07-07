@@ -147,12 +147,48 @@
         }
 
         .button-37:hover {
-            box-shadow: rgba(0, 0, 0, .15) 0 5px 11px 0;
+            box-shadow: rgba(255, 105, 105, 0.15) 0 5px 11px 0;
             transform: translateY(-2px);
         }
 
         @media (min-width: 768px) {
             .button-37 {
+                padding: 10px 30px;
+            }
+        }
+
+        .button-38 {
+            background-color: rgb(190, 38, 255);
+            border: 1px solid rgb(190, 38, 255);
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            outline: none;
+            outline: 0;
+            padding: 10px 25px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 150ms, box-shadow 150ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-left: 15px;
+            margin-top: 10px;
+
+        }
+
+        .button-38:hover {
+            box-shadow: rgba(219, 146, 255, 0.15) 0 5px 11px 0;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+            .button-38 {
                 padding: 10px 30px;
             }
         }
@@ -204,6 +240,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
 
     {{-- header start --}}
     <nav>
@@ -235,10 +272,12 @@
         <div class="form-daftar">
             <h4>Formulir Pendaftaran</h4>
             <div class="container">
-                <form action="/submit" method="POST">
+                <form action="{{ route('pendaftar.store') }}" method="post"
+                    role="form"enctype="multipart/form-data">
+                    @csrf
                     <div class="form-group">
                         <label for="judulArtikel"><b style="color: black;">Nama Lengkap</b></label>
-                        <input type="text" id="judulArtikel" name="judul" placeholder="Nama Lengkap" required
+                        <input type="text" id="judulArtikel" name="nama" placeholder="Nama Lengkap" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
@@ -252,8 +291,7 @@
                     </div>
                     <div class="form-group">
                         <label for="jenisKelamin"><b style="color: black;">Kelas</b></label>
-                        <select id="jenisKelamin" name="jenis_kelamin" required
-                            style="color: black; padding-left: 10px;">
+                        <select id="jenisKelamin" name="kelas" required style="color: black; padding-left: 10px;">
                             <option style="color: gray;" value="">Pilih Kelas</option>
                             <option value="5 (SD)">5 (SD)</option>
                             <option value="6 (SD)">6 (SD)</option>
@@ -267,27 +305,32 @@
                     </div>
                     <div class="form-group">
                         <label for="judulArtikel"><b style="color: black;">Asal Sekolah</b></label>
-                        <input type="text" id="judulArtikel" name="judul" placeholder="Asal Sekolah" required
+                        <input type="text" id="judulArtikel" name="asal_sekolah" placeholder="Asal Sekolah" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
                         <label for="judulArtikel"><b style="color: black;">No Telp Siswa</b></label>
-                        <input type="text" id="judulArtikel" name="judul" placeholder="+ 62" required
+                        <input type="text" id="judulArtikel" name="nomor_telp_siswa" placeholder="+ 62" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
                         <label for="judulArtikel"><b style="color: black;">No Telp Orang Tua</b></label>
-                        <input type="text" id="judulArtikel" name="judul" placeholder="+ 62"
-                            required style="color: black; padding-left: 10px;">
+                        <input type="text" id="judulArtikel" name="nomor_telp_ortu" placeholder="+ 62" required
+                            style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
                         <label for="judulArtikel"><b style="color: black;">Email</b></label>
-                        <input type="email" id="judulArtikel" name="judul" placeholder="Email" required
+                        <input type="email" id="judulArtikel" name="email" placeholder="Email" required
                             style="color: black; padding-left: 10px;">
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-9 offset-sm-3">
-                            <button type="submit" class="button-37" style="color: black; margin-left: 84%;">
+                    <div class="form-group row" style="margin-left: 69%;">
+                        <div class="col-sm-6">
+                            <button type="reset" class="button-38 btn btn-secondary" style="color: black; margin-left: 40%;">
+                                RESET
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="button-37 btn btn-primary" style="color: black;">
                                 SUBMIT
                             </button>
                         </div>

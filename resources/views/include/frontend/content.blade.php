@@ -6,17 +6,19 @@
                 <div class="content">
                     <br><br><br>
                     <h2 data-wow-delay=".3s">Explore Excellence with <b style="color: orange">BimbelKu</b></h2><br>
-                    <p style="font-size: 20px;"><b style="color: rgb(157, 136, 98);">BimbelKu</b> fokus pada peningkatan prestasi
+                    <p style="font-size: 20px;"><b style="color: rgb(157, 136, 98);">BimbelKu</b> fokus pada peningkatan
+                        prestasi
                         akademik di bidang Bahasa Inggris dan Matematika
                         dengan bimbingan dari pengajar berpengalaman dan metode pengajaran inovatif.</p>
                     <br>
-                    <a href="#" class="theme-btn round100 p2-bg">
+                    <a href="{{ route('about') }}" class="theme-btn round100 p2-bg">
                         <span class="white fw-medium" style="hight: 10px;">
                             Read More
                         </span>
                     </a>
                 </div>
-                <img src="{{ asset('assets2/img/aicon/vector2.png') }}" data-wow-delay=".5s" alt="Gambar Slide Pertama" style="margin-top: -2%; height: 40%;">
+                <img src="{{ asset('assets2/img/aicon/vector2.png') }}" data-wow-delay=".5s" alt="Gambar Slide Pertama"
+                    style="margin-top: -2%; height: 40%;">
             </div>
             <div class="carousel-slide">
                 <img src="https://via.placeholder.com/400x300" alt="Gambar Slide Kedua">
@@ -222,139 +224,40 @@
 
 <!-- News Section Start -->
 <section class="extra-sectionv position-relative fix section-padding">
-    <div class="container">
-        <div class="row justify-content-center mb-60">
-            <div class="col-lg-6">
-                <div class="section-title text-center">
-                    <span class="sub-title wow fadeInUp p2-clr">
-                        Testimoni Alumni
-                    </span>
-                    <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
-                        Building a strong foundation <br> through education
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="row g-lg-4 g-4">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="news-card-items extra-class-item">
-                    <div class="news-image mb-xxl-4 mb-4">
-                        <img src="{{ asset('assets2/img/ablog/class1.png') }}" alt="img">
-                        <div class="news-layer-wrapper">
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class1.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class1.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class1.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class1.png') }}');">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <h4 class="mb-3">
-                            <a href="service-details.html" class="black">
-                                Tutoring Services
-                            </a>
-                        </h4>
-                        <p class="pra mb-3">
-                            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisi
-                            Imperdiet massa turpis sit proin loren
-                            ipsum
-                        </p>
-                        <div class="d-flex align-items-center justify-content-between gap-xxl-2">
-                            <a href="service-details.html" class="theme-btn-2 fw-medium black">learn more <i
-                                    class="fas fa-long-arrow-right p3-clr"></i></a>
-                            <img src="{{ asset('assets2/img/ablog/class-icon1.png') }}" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="news-card-items extra-class-item">
-                    <div class="news-image mb-xxl-4 mb-4">
-                        <img src="{{ asset('assets2/img/ablog/class2.png') }}" alt="img">
-                        <div class="news-layer-wrapper">
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class2.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class2.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class2.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class2.png') }}');">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <h4 class="mb-3">
-                            <a href="service-details.html" class="black">
-                                Language Lessons
-                            </a>
-                        </h4>
-                        <p class="pra mb-3">
-                            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisi
-                            Imperdiet massa turpis sit proin
-                            loren
-                            ipsum
-                        </p>
-                        <div class="d-flex align-items-center justify-content-between gap-xxl-2">
-                            <a href="service-details.html" class="theme-btn-2 fw-medium black">learn more <i
-                                    class="fas fa-long-arrow-right p3-clr"></i></a>
-                            <img src="{{ asset('assets2/img/ablog/class-icon2.png') }}" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".7s">
-                <div class="news-card-items extra-class-item">
-                    <div class="news-image mb-xxl-4 mb-4">
-                        <img src="{{ asset('assets2/img/ablog/class3.png') }}" alt="img">
-                        <div class="news-layer-wrapper">
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class3.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class3.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class3.png') }}');">
-                            </div>
-                            <div class="news-layer-image"
-                                style="background-image: url('{{ asset('assets2/img/ablog/class3.png') }}');">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <h4 class="mb-3">
-                            <a href="service-details.html" class="black">
-                                Study Skills Coaching
-                            </a>
-                        </h4>
-                        <p class="pra mb-3">
-                            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisi
-                            Imperdiet massa turpis sit proin
-                            loren
-                            ipsum
-                        </p>
-                        <div class="d-flex align-items-center justify-content-between gap-xxl-2">
-                            <a href="service-details.html" class="theme-btn-2 fw-medium black">learn more <i
-                                    class="fas fa-long-arrow-right p3-clr"></i></a>
-                            <img src="{{ asset('assets2/img/ablog/class-icon3.png') }}" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="section-title text-center">
+        <span class="sub-title wow fadeInUp p5-clr">
+            Testimoni Alumni
+        </span>
+        <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
+            Discover Your Passion Pursue <br>Your Dreams
+        </h3>
     </div>
-    <!-- Element -->
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                @foreach ($testimoni as $data)
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="{{ asset('images/testimoni/' . $data->cover) }}" alt="image"
+                                    class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="name">{{ $data->nama }}</h3>
+                            <p class="profession">{{ $data->jabatan }}</p><br>
+                            <p class="description">{{ $data->pesan }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
 </section>
 
 <!-- Carft Section Start -->

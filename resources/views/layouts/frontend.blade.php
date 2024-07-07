@@ -120,6 +120,121 @@
             right: 5px;
         }
     </style>
+    {{-- slider --}}
+    <style>
+        .slide-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .slide-content {
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius : 25px;
+        }
+
+        .card {
+            border-radius: 25px;
+            background-color: #efefef;
+            width: 25%;
+        }
+
+        .image-content,
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 14px;
+        }
+
+        .image-content {
+            position: relative;
+            row-gap: 5px;
+            padding: 25px 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px 25px 0 25px;
+            background-color: orange;
+        }
+
+        .overlay::before,
+        .overlay::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: orange;
+        }
+
+        .overlay::after {
+            border-radius: 0 25px 0 0;
+            background-color: #EFEFEF;
+        }
+
+        .card-image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            backgorund: #fff;
+            padding: 3px;
+        }
+
+        .card-image .card-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4070f4;
+        }
+
+        .name {
+            font-size: 25px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #707070;
+            text-align: center;
+        }
+        .swiper-navBtn {
+            color: rgb(197, 152, 67);
+            transition: color 0.3s ease;
+        }
+        .swiper-navBtn:hover {
+            color: rgb(255, 173, 21);
+        }
+        .swiper-navBtn:before,
+        .swiper-navBtn:after {
+            font-size: 40px;
+        }
+        .swiper-button-next {
+            right: 0;
+        }     
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-pagination-bullet {
+            background-color: rgb(197, 152, 67);
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: rgb(255, 173, 21);
+        } 
+    </style>
 
 </head>
 
@@ -237,6 +352,8 @@
     <script src="{{ asset('assets2/js/jquery.counterup.min.js') }}"></script>
     <!--<< Swiper Slider Js >>-->
     <script src="{{ asset('assets2/js/swiper-bundle.min.js') }}"></script>
+
+
     <!--<< MeanMenu Js >>-->
     <script src="{{ asset('assets2/js/jquery.meanmenu.min.js') }}"></script>
     <!--<< Magnific Popup Js >>-->
@@ -286,5 +403,44 @@
         // Panggil fungsi autoSlide setiap interval slideInterval (10 detik)
         setInterval(autoSlide, slideInterval);
     </script>
+    {{-- Slider --}}
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            currentSlide: true,
+            fade: true,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+
+
+
+</body>
 
 </html>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Pendaftar;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class PendaftarController extends Controller
 {
@@ -48,8 +50,11 @@ class PendaftarController extends Controller
         $pendaftar->email = $request->email;
 
         $pendaftar->save();
+        Alert::success('Pendaftaran Berhasil', 'Terima kasih telah mendaftar di bimbingan belajar kami!');
 
-        return redirect()->route('pendaftar.index')->with('success', 'Data berhasil ditambahkan');
+
+        return redirect()->route('daftar-form');
+
 
     }
 
@@ -97,7 +102,7 @@ class PendaftarController extends Controller
 
         $pendaftar->save();
 
-        return redirect()->route('pendaftar.index')->with('success', 'Data berhasil Di Edit');
+        return redirect()->route('daftar')->with('success', 'Data berhasil Di Edit');
 
     }
 

@@ -81,8 +81,6 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <h4 class="card-title">Tabel Pendaftar</h4>
-                                        <a href="{{ route('pendaftar.create') }}" class="btn btn-primary">+ Add
-                                            Data</a>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table">

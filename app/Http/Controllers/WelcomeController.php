@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\Testimoni;
 
 class WelcomeController extends Controller
 {
@@ -14,6 +15,8 @@ class WelcomeController extends Controller
     public function index()
     {
         $artikel = Artikel::orderBy('created_at', 'desc')->get();
-        return view('welcome', compact('artikel'));
+        $testimoni = Testimoni::orderBy('created_at', 'desc')->get();
+
+        return view('welcome', compact('artikel', 'testimoni'));
     }
 }

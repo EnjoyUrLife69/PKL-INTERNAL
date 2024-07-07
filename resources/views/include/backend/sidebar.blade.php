@@ -33,7 +33,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-face"></i>
                 </span>
-                <span class="menu-title">Pendaftaran</span>
+                <span class="menu-title">Pendaftar</span>
             </a>
         </li>
         <li class="nav-item menu-items">
