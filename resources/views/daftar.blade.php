@@ -136,6 +136,7 @@
 </head>
 
 <body>
+    <div id="scrollUp">.</div>
     {{-- header start --}}
     <nav>
         <ul>
@@ -146,7 +147,7 @@
             <li><a href="{{ route('daftar') }}"><b>Daftar</b></a></li>
         </ul>
     </nav>
-    <div class="orange"></div>
+    <div class="orange" id="scrollUp"></div>
     {{-- header end --}}
 
     <section style="margin-top: 10%;">
@@ -225,7 +226,7 @@
     @include('include.frontend.footer')
 
 
-        <!--<< All JS Plugins >>-->
+    <!--<< All JS Plugins >>-->
     <script src="{{ asset('assets2/js/jquery-3.7.1.min.js') }}"></script>
     <!--<< Viewport Js >>-->
     <script src="{{ asset('assets2/js/viewport.jquery.js') }}"></script>

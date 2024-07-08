@@ -41,6 +41,7 @@
 </head>
 
 <body>
+    <div id="scrollUp">.</div>
     {{-- HEADER START --}}
     @include('include.frontend.header')
     {{-- HEADER END --}}

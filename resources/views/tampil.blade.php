@@ -53,7 +53,7 @@
 
         $formattedDate = Carbon::parse($artikel->tanggal)->translatedFormat('d F Y');
     @endphp
-
+    <div id="scrollUp">.</div>
     {{-- Header --}}
     @include('include.frontend.header')
     {{-- Header End --}}
@@ -154,6 +154,12 @@
                                     </div>
                                 </div><br>
                             @endforeach
+                            <a href="{{ route('blog') }}" class="theme-btn round100 p2-bg"
+                                style="height: 40px; width: 40%; margin-left: 105px; display: flex; align-items: center; justify-content: center;">
+                                <span class="white fw-medium">
+                                    More
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>

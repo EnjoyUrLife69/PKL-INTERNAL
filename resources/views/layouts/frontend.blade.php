@@ -133,7 +133,7 @@
         .slide-content {
             margin: 0 40px;
             overflow: hidden;
-            border-radius : 25px;
+            border-radius: 25px;
         }
 
         .card {
@@ -210,30 +210,37 @@
             color: #707070;
             text-align: center;
         }
+
         .swiper-navBtn {
             color: rgb(197, 152, 67);
             transition: color 0.3s ease;
         }
+
         .swiper-navBtn:hover {
             color: rgb(255, 173, 21);
         }
+
         .swiper-navBtn:before,
         .swiper-navBtn:after {
             font-size: 40px;
         }
+
         .swiper-button-next {
             right: 0;
-        }     
+        }
+
         .swiper-button-prev {
             left: 0;
         }
+
         .swiper-pagination-bullet {
             background-color: rgb(197, 152, 67);
             opacity: 1;
         }
+
         .swiper-pagination-bullet-active {
             background-color: rgb(255, 173, 21);
-        } 
+        }
     </style>
 
 </head>
@@ -371,7 +378,7 @@
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
-        const slideInterval = 30000; // Interval waktu dalam milidetik (10 detik)
+        const slideInterval = 10000;
 
         function showSlide(index) {
             slides[currentSlide].classList.remove('active', 'next', 'prev');
@@ -400,12 +407,43 @@
             changeSlide(1);
         }
 
-        // Panggil fungsi autoSlide setiap interval slideInterval (10 detik)
         setInterval(autoSlide, slideInterval);
     </script>
     {{-- Slider --}}
     <script>
         var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            currentSlide: true,
+            fade: true,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".carousel", {
             slidesPerView: 3,
             spaceBetween: 30,
             slidesPerGroup: 3,

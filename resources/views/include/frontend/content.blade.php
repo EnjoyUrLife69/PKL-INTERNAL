@@ -1,12 +1,15 @@
 <!-- Caroussel -->
 <section class="bannerv2-section position-relative fix" id="scrollUp">
-    <div class="container">
-        <div class="carousel" data-aos="fade-up">
-            <div class="carousel-slide active">
+    <div class="carousel-container swiper">
+        <div class="carousel swiper-wrapper" data-aos="fade-up">
+            <div class="carousel-slide active swiper-slide">
                 <div class="content">
                     <br><br><br>
                     <h2 data-wow-delay=".3s">Explore Excellence with <b style="color: orange">BimbelKu</b></h2><br>
-                    <p style="font-size: 20px;"><b style="color: rgb(157, 136, 98);">BimbelKu</b> fokus pada peningkatan
+                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;"><b
+                            style="color: rgb(255, 166, 0);">BimbelKu</b> fokus
+                        pada
+                        peningkatan
                         prestasi
                         akademik di bidang Bahasa Inggris dan Matematika
                         dengan bimbingan dari pengajar berpengalaman dan metode pengajaran inovatif.</p>
@@ -18,17 +21,25 @@
                     </a>
                 </div>
                 <img src="{{ asset('assets2/img/aicon/vector2.png') }}" data-wow-delay=".5s" alt="Gambar Slide Pertama"
-                    style="margin-top: -2%; height: 40%;">
+                    style="margin-top: 1%; height: 40%;">
             </div>
-            <div class="carousel-slide">
-                <img src="https://via.placeholder.com/400x300" alt="Gambar Slide Kedua">
+            <div class="carousel-slide active swiper-slide">
+                <img src="{{ asset('assets2/img/aicon/vector3.png') }}" data-wow-delay=".5s" alt="Gambar Slide Pertama"
+                    style="margin-top: 1%; height: 40%;">
                 <div class="content">
-                    <h2>Informasi Slide Kedua</h2>
-                    <p>Ini adalah informasi untuk slide kedua.</p>
-                    <br><br><br><br><br><br><br><br><br><br>
-                    <a href="#" class="theme-btn round100 p2-bg" style="">
-                        <span class="white fw-medium">
-                            Read More
+                    <br><br><br>
+                    <h2 data-wow-delay=".3s">Join with <br><b style="color: orange; margin-left: 0px;">BimbelKu</b></h2>
+                    <br>
+                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;"><b
+                            style="color: rgb(255, 166, 0);"></b> Capai
+                        prestasi terbaik Anda dalam <b>Bahasa Inggris</b> dan <b>Matematika</b> dengan bantuan pengajar
+                        berpengalaman
+                        dan metode pengajaran inovatif dengan bergabung dengan <b
+                            style="color: rgb(255, 166, 0);">BimbelKu</b></p>
+                    <br>
+                    <a href="{{ route('daftar') }}" class="theme-btn round100 p2-bg">
+                        <span class="white fw-medium" style="hight: 10px;">
+                            Daftar Sekarang
                         </span>
                     </a>
                 </div>
@@ -53,29 +64,14 @@
                         <h3 class="m-title mb-3 wow fadeInUp black" data-wow-delay=".3s">
                             Invest in education invest <br> in the future
                         </h3>
-                        <p class="mb-3 pra wow fadeInUp" data-wow-delay=".4s">
-                            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                            Imperdiet massa turpis sit proin
-                            metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi
-                            ultricies dictum
+                        <p class="mb-3 pra wow fadeInUp" data-wow-delay=".4s" style="font-size: 20px;">
+                            Di <b style="color: orange;">BimbelKu</b>, kami percaya bahwa pendidikan adalah investasi
+                            terbaik untuk masa depan. <br><br> Kami
+                            berdedikasi untuk meningkatkan prestasi akademik siswa dalam <b
+                                style="color: orange;">Bahasa Inggris</b> dan <b style="color: orange;">Matematika</b>
+                            melalui pendekatan yang inovatif dan bimbingan pengajar berpengalaman. Kami berkomitmen
+                            untuk membantu setiap siswa mencapai potensi penuh mereka.
                         </p>
-                        <p class="pra wow fadeInUp" data-wow-delay=".5s">
-                            Lorem ipsum dolor sit amet cons Amet lectus mi ultricies dictum facilisis sem Lorem
-                            ipsum dolor sit amet consectetur.
-                            Amet lectus mi ultricies
-                        </p>
-                        <div class="d-flex align-items-center gap-xl-3 gap-2 mt-40 wow fadeInUp" data-wow-delay=".6s">
-                            <a href="about.html" class="theme-btn round100 p2-bg">
-                                <span class="white fw-medium">
-                                    Read More
-                                </span>
-                            </a>
-                            <a href="contact.html" class="theme-btn cart-btn round100">
-                                <span class="black fw-semibold">
-                                    Contact Us
-                                </span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -142,7 +138,8 @@
                                 <p class="pra mb-4">
                                     {{ $data->deskripsi }}
                                 </p>
-                                <a href="{{ url('tampil', $data->id) }}" class="theme-btn-2 fw-medium black">Read More
+                                <a href="{{ url('tampil', $data->id) }}" class="theme-btn-2 fw-medium black">Read
+                                    More
                                     <i class="fas fa-long-arrow-right p2-clr"></i></a>
                             </div>
                         </div>
@@ -222,7 +219,7 @@
     </div>
 </section>
 
-<!-- News Section Start -->
+<!-- Testimoni Alumni -->
 <section class="extra-sectionv position-relative fix section-padding">
     <div class="section-title text-center">
         <span class="sub-title wow fadeInUp p5-clr">
@@ -411,39 +408,50 @@
     <img src="{{ asset('assets2/img/ainspair/carft-man.png') }}" alt="img" class="carft-man">
 </section>
 
-<!-- Stay Success Section Start -->
+<!-- Maps -->
 <section class="stay-section pt-50 pb-50 cmn-bg overflow-hidden position-relative">
     <div class="container">
-        <div class="row justify-content-between align-items-center g-4">
-            <div class="col-lg-5 col-md-6 col-sm-7">
-                <div class="stay-content">
-                    <div class="section-title">
-                        <span class="sub-title wow fadeInUp black">
-                            Stay With Us
-                        </span>
-                        <h3 class="m-title wow fadeInUp black mb-sm-3 mb-2" data-wow-delay=".3s">
-                            The path to success starts with education
-                        </h3>
-                        <p class="mb-24 pra wow fadeInUp" data-wow-delay=".4s">
-                            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                            Imperdiet massa turpis sit proin
-                            metus volutpat.
-                        </p>
-                        <a href="contact.html" class="theme-btn round100 p2-bg py-3">
-                            <span class="white fw-medium">
-                                Read More
-                            </span>
-                        </a>
+        <h3 style="font-size: 40px;">Maps</h3>
+        <div class="row">
+            <div class="col-xl-9">
+                <iframe style="width: 100%; height: 400px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.701929897443!2d-1.2565939471756638!3d51.75677384369348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sid!4v1720458420187!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="col-xl-3">
+                <div class="stay-cont">
+                    <h3>Visit Us</h3>
+                    <hr style="width: 45%;height: 5px; background-color: rgb(0, 0, 0);">
+                    <p class="pra">You can know more about us by visiting this address </p><br><br>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <img style="width: 35px;" src="{{ asset('assets2/img/aicon/location.png') }}"
+                                alt="">
+                        </div>
+                        <div class="col-xl-9">
+                            <p><b>Jl. Lorem ipsum dolor sit amet</b></p>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <img style="width: 35px;" src="{{ asset('assets2/img/aicon/phone.png') }}"
+                                alt="">
+                        </div>
+                        <div class="col-xl-9">
+                            <p style="margin-top: 5px;"><b>+67 123 456 789</b></p>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <img style="width: 35px;" src="{{ asset('assets2/img/aicon/email.png') }}"
+                                alt="">
+                        </div>
+                        <div class="col-xl-9">
+                            <p style="margin-top: 5px;"><b>loremipsum@gmail.com</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 me-xl-5 col-sm-5">
-                <div class="stay-thumb w-100">
-                    <img src="{{ asset('assets2/img/aservices/stay-thumb.png') }}" alt="img" class="w-100">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Element-->
-    <img src="{{ asset('assets2/img/aservices/stay-shape.png') }}" alt="img" class="stay-element">
 </section>

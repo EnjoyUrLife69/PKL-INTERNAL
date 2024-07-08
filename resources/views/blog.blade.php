@@ -129,6 +129,7 @@
     </div>
     <div class="offcanvas__overlay"></div>
 
+    <div id="scrollUp">.</div>
     <!-- Header Section Start -->
     <header class="header-1 header-2">
         <div class="container">
@@ -171,7 +172,7 @@
     {{-- HEADER END --}}
 
     {{-- Content Start --}}
-    <h3 style="font-size: 40px ;margin-top: 12%; color: #000;" class="text-center" data-aos="fade-up">Welcome To Our Blog's</h3>
+    <h3 id="scrollUp" style="font-size: 40px ;margin-top: 12%; color: #000;" class="text-center" data-aos="fade-up">Welcome To Our Blog's</h3>
     <h5 class="text-center" data-aos="fade-up" style="color: rgb(80, 54, 6);">Baca Artikel Terbaru dan Temukan Tips Belajar yang Berguna
     </h5>
 

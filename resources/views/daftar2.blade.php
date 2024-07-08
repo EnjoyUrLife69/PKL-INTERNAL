@@ -98,7 +98,7 @@
         /* header end*/
 
         .info {
-            background-color: rgb(255, 159, 34);
+            background-color: #FDFBF8;
             margin-top: 9%;
             margin-left: auto;
             margin-right: auto;
@@ -110,15 +110,16 @@
 
         .info h4 {
             font-size: 25px;
-            padding: 1%;
+            padding: 3%;
             color: Black;
         }
 
         .info p {
             font-size: 20px;
             font-weight: 600;
-            padding: 1%;
+            padding: 3%;
             color: rgb(86, 85, 85);
+            margin-top: -5%;
         }
 
         .button-37 {
@@ -141,9 +142,9 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
-            margin-left: 15px;
-            margin-top: 10px;
-
+            margin-left: 30px;
+            margin-top: -5%;
+            
         }
 
         .button-37:hover {
@@ -252,7 +253,7 @@
             <li><a href="{{ route('daftar') }}"><b>Daftar</b></a></li>
         </ul>
     </nav>
-    <div class="orange"></div>
+    <div class="orange" id="scrollUp"></div>
     {{-- header end --}}
 
     <section>
@@ -323,13 +324,13 @@
                         <input type="email" id="judulArtikel" name="email" placeholder="Email" required
                             style="color: black; padding-left: 10px;">
                     </div>
-                    <div class="form-group row" style="margin-left: 69%;">
+                    <div class="form-group row" style="margin-left: 66%;">
                         <div class="col-sm-6">
                             <button type="reset" class="button-38 btn btn-secondary" style="color: black; margin-left: 40%;">
                                 RESET
                             </button>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" style="margin-top: 15px;">
                             <button type="submit" class="button-37 btn btn-primary" style="color: black;">
                                 SUBMIT
                             </button>
