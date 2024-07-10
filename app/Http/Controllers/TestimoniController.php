@@ -71,8 +71,8 @@ class TestimoniController extends Controller
 
         $testimoni->pesan = $request->pesan;
         $testimoni->save();
-
-        return redirect()->route('testimoni.index')->with('success', 'Data berhasil ditambahkan');
+        toast('Data berhasil disimpan', 'success');
+        return redirect()->route('testimoni.index');
 
     }
 
@@ -103,9 +103,9 @@ class TestimoniController extends Controller
         }
         $testimoni->pesan = $request->pesan;
         $testimoni->save();
+        toast('Data berhasil di update', 'success');
 
-        return redirect()->route('testimoni.index')
-            ->with('success', 'data berhasil di ubah');
+        return redirect()->route('testimoni.index');
 
     }
 
@@ -113,8 +113,9 @@ class TestimoniController extends Controller
     {
         $testimoni = testimoni::FindOrFail($id);
         $testimoni->delete();
+        toast('Data berhasil di hapus', 'success');
         return redirect()->route('testimoni.index')
-            ->with('success', 'data berhasil dihapus');
+            ;
 
     }
 }

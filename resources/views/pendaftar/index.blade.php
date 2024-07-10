@@ -14,9 +14,14 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel-2/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css">
+
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <div class="container-scroller">
         {{-- SIDEBAR --}}
         @include('include.backend.sidebar')
@@ -39,42 +44,12 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="col-md-6 col-xl-5 grid-margin stretch-card ml-auto" style="">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Filter by Category</p>
-                                    <form method="GET" action="{{ route('artikel.index') }}">
-                                        <select class="form-control" name="id_kategori" id="putih"
-                                            id="exampleSelectGender">
-                                            <option value=""
-                                                {{ is_null(request()->get('id_kategori')) ? 'selected' : '' }}>
-                                                Tampilkan Semua Artikel</option>
-                                            @foreach ($kategori as $data)
-                                                <option value="{{ $data->id }}"
-                                                    {{ request()->get('id_kategori') == $data->id ? 'selected' : '' }}>
-                                                    {{ $data->nama_kategori }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        <button type="submit" class="btn btn-primary mt-3">Search</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                     @if (session('success'))
                         <div class="alert alert-success" role="alert">
                             {{ session('success') }}
                         </div>
                     @endif  
-                    {{-- @if (session('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-                    @if ($artikel->isEmpty())
-                        <p style="font-size: 20px; text-align: center;">Tidak ada Artikel untuk Kategori ini.</p>
-                    @else --}}
                     <div class="row">
                         <div class="col-lg-12 grid-margin stretch-card">
                             <div class="card">
@@ -83,14 +58,14 @@
                                         <h4 class="card-title">Tabel Pendaftar</h4>
                                     </div>
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table" id="example">
                                             <thead>
                                                 <tr>
                                                     <th><b>
                                                             <h5>No</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>nama</h5>
+                                                            <h5>Nama Murid</h5>
                                                         </b></th>
                                                     <th><b>
                                                             <h5>Jenis Kelamin</h5>
@@ -164,6 +139,25 @@
     <script src="{{ asset('assets/js/settings.js') }}"></script>
     <script src="{{ asset('assets/js/todolist.js') }}"></script>
     <script src="{{ asset('assets/js/dashboard.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.print.min.js"></script>
+    <script>
+        new DataTable('#example', {
+            layout: {
+                topStart: {
+                    buttons: ['pdf', 'excel']
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
     <!--<< Bootstrap min.css >>-->
@@ -148,7 +149,7 @@
         }
 
         .button-37:hover {
-            box-shadow: rgba(255, 105, 105, 0.15) 0 5px 11px 0;
+            box-shadow: rgb(255, 213, 0);
             transform: translateY(-2px);
         }
 
@@ -159,8 +160,8 @@
         }
 
         .button-38 {
-            background-color: rgb(190, 38, 255);
-            border: 1px solid rgb(190, 38, 255);
+            background-color: rgb(255, 83, 83);
+            border: 1px solid rgb(255, 83, 83);
             border-radius: 4px;
             box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
             box-sizing: border-box;
@@ -184,7 +185,7 @@
         }
 
         .button-38:hover {
-            box-shadow: rgba(219, 146, 255, 0.15) 0 5px 11px 0;
+            box-shadow: rgba(255, 0, 0, 0.15) 0 5px 11px 0;
             transform: translateY(-2px);
         }
 
@@ -277,12 +278,12 @@
                     role="form"enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Nama Lengkap</b></label>
+                        <label for="judulArtikel"><b style="color: black;">Nama Lengkap</b><b style="color: red;">*</b></label>
                         <input type="text" id="judulArtikel" name="nama" placeholder="Nama Lengkap" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="jenisKelamin"><b style="color: black;">Jenis Kelamin</b></label>
+                        <label for="jenisKelamin"><b style="color: black;">Jenis Kelamin</b><b style="color: red;">*</b></label>
                         <select id="jenisKelamin" name="jenis_kelamin" required
                             style="color: black; padding-left: 10px;">
                             <option value="">Pilih Jenis Kelamin</option>
@@ -291,7 +292,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="jenisKelamin"><b style="color: black;">Kelas</b></label>
+                        <label for="jenisKelamin"><b style="color: black;">Kelas</b><b style="color: red;">*</b></label>
                         <select id="jenisKelamin" name="kelas" required style="color: black; padding-left: 10px;">
                             <option style="color: gray;" value="">Pilih Kelas</option>
                             <option value="5 (SD)">5 (SD)</option>
@@ -305,22 +306,22 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Asal Sekolah</b></label>
+                        <label for="judulArtikel"><b style="color: black;">Asal Sekolah</b><b style="color: red;">*</b></label>
                         <input type="text" id="judulArtikel" name="asal_sekolah" placeholder="Asal Sekolah" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">No Telp Siswa</b></label>
+                        <label for="judulArtikel"><b style="color: black;">No Telp Siswa</b><b style="color: red;">*</b></label>
                         <input type="text" id="judulArtikel" name="nomor_telp_siswa" placeholder="+ 62" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">No Telp Orang Tua</b></label>
+                        <label for="judulArtikel"><b style="color: black;">No Telp Orang Tua</b><b style="color: red;">*</b></label>
                         <input type="text" id="judulArtikel" name="nomor_telp_ortu" placeholder="+ 62" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Email</b></label>
+                        <label for="judulArtikel"><b style="color: black;">Email</b><b style="color: red;">*</b></label>
                         <input type="email" id="judulArtikel" name="email" placeholder="Email" required
                             style="color: black; padding-left: 10px;">
                     </div>

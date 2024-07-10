@@ -11,6 +11,7 @@
     <meta name="description" content="Ascent - Kids Kindergarden School HTML Template">
     <!-- ======== Page title ============ -->
     <title>Ascent - Chindcare & Kids School HTML Template</title>
+    <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
     <!--<< Bootstrap min.css >>-->
@@ -158,7 +159,7 @@
                                             <a href="{{ route('blog') }}"> Blog </a>
                                         </li>
                                         <li>
-                                        <a href="{{ route('daftar') }}">Daftar</a>
+                                        <a href="{{ route('daftar') }}">Join Now</a>
                                         </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     </ul>
                                 </nav>
@@ -172,8 +173,8 @@
     {{-- HEADER END --}}
 
     {{-- Content Start --}}
-    <h3 id="scrollUp" style="font-size: 40px ;margin-top: 12%; color: #000;" class="text-center" data-aos="fade-up">Welcome To Our Blog's</h3>
-    <h5 class="text-center" data-aos="fade-up" style="color: rgb(80, 54, 6);">Baca Artikel Terbaru dan Temukan Tips Belajar yang Berguna
+    <h3 id="scrollUp" style="font-size: 40px ;margin-top: 12%; color: #000;" class="text-center" data-aos="fade-up">Blogs</h3><br>
+    <h5 class="text-center" data-aos="fade-up" style="color: rgb(80, 54, 6);">Welcome to the <b style="color: orange">BimbelKu</b> Blog! Here, you'll find a wealth of information,<br> tips, and resources to help students excel in their English studies.
     </h5>
 
     <!-- Blogs Start -->

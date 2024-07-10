@@ -6,13 +6,10 @@
                 <div class="content">
                     <br><br><br>
                     <h2 data-wow-delay=".3s">Explore Excellence with <b style="color: orange">BimbelKu</b></h2><br>
-                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;"><b
-                            style="color: rgb(255, 166, 0);">BimbelKu</b> fokus
-                        pada
-                        peningkatan
-                        prestasi
-                        akademik di bidang Bahasa Inggris dan Matematika
-                        dengan bimbingan dari pengajar berpengalaman dan metode pengajaran inovatif.</p>
+                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;"> At <b
+                            style="color: rgb(255, 166, 0);">BimbelKu</b>, we are dedicated to enhancing
+                        academic achievement in English through the expertise of our experienced teachers and the use of
+                        innovative teaching techniques.</p>
                     <br>
                     <a href="{{ route('about') }}" class="theme-btn round100 p2-bg">
                         <span class="white fw-medium" style="hight: 10px;">
@@ -30,18 +27,16 @@
                     <br><br><br>
                     <h2 data-wow-delay=".3s">Join with <br><b style="color: orange; margin-left: 0px;">BimbelKu</b></h2>
                     <br>
-                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;"><b
-                            style="color: rgb(255, 166, 0);"></b> Capai
-                        prestasi terbaik Anda dalam <b>Bahasa Inggris</b> dan <b>Matematika</b> dengan bantuan pengajar
-                        berpengalaman
-                        dan metode pengajaran inovatif dengan bergabung dengan <b
-                            style="color: rgb(255, 166, 0);">BimbelKu</b></p>
-                    <br>
-                    <a href="{{ route('daftar') }}" class="theme-btn round100 p2-bg">
-                        <span class="white fw-medium" style="hight: 10px;">
-                            Daftar Sekarang
-                        </span>
-                    </a>
+                    <p style="font-size: 20px; margin-left:10px; line-height: 35px;">
+                        Join <b style="color: rgb(255, 166, 0);">BimbelKu</b> now and embark on your journey towards
+                        academic success in English!, we are here to help you achieve your
+                        learning goals. Register now and experience the difference!
+                        <br><br>
+                        <a href="{{ route('daftar') }}" class="theme-btn round100 p2-bg">
+                            <span class="white fw-medium" style="hight: 10px;">
+                                Daftar Sekarang
+                            </span>
+                        </a>
                 </div>
             </div>
             <button class="arrow left" onclick="changeSlide(-1)">&#9664;</button>
@@ -62,15 +57,18 @@
                             About Us
                         </span>
                         <h3 class="m-title mb-3 wow fadeInUp black" data-wow-delay=".3s">
-                            Invest in education invest <br> in the future
-                        </h3>
+                            Invest in <b style="color: orange;">Education</b> <br> invest in the <b
+                                style="color: orange;">Future</b>
+                        </h3><br>
+
                         <p class="mb-3 pra wow fadeInUp" data-wow-delay=".4s" style="font-size: 20px;">
-                            Di <b style="color: orange;">BimbelKu</b>, kami percaya bahwa pendidikan adalah investasi
-                            terbaik untuk masa depan. <br><br> Kami
-                            berdedikasi untuk meningkatkan prestasi akademik siswa dalam <b
-                                style="color: orange;">Bahasa Inggris</b> dan <b style="color: orange;">Matematika</b>
-                            melalui pendekatan yang inovatif dan bimbingan pengajar berpengalaman. Kami berkomitmen
-                            untuk membantu setiap siswa mencapai potensi penuh mereka.
+                            In <b style="color: orange;">BimbelKu</b> we believe that education is the
+                            best investment for the future.
+
+                            <br><br>
+                            We are dedicated to enhancing students' academic achievements in English through innovative
+                            approaches and guidance from experienced teachers. We are committed to helping every student
+                            reach their full potential.
                         </p>
                     </div>
                 </div>
@@ -90,11 +88,11 @@
                             </div>
                         </div>
                         <div class="thumb wow fadeInUp" data-wow-delay=".4s">
-                            <img src="{{ asset('assets2/img/about/aboutv2-1.png') }}" alt="img">
+                            <img src="{{ asset('assets2/img/aicon/imgg.png') }}" alt="img">
                         </div>
                     </div>
                     <div class="right-thumb d-sm-block d-none wow fadeInDown" data-wow-delay=".5s">
-                        <img src="{{ asset('assets2/img/about/aboutv2-2.png') }}" alt="img">
+                        <img src="{{ asset('assets2/img/aicon/imggg.png') }}" alt="img">
                     </div>
                 </div>
             </div>
@@ -223,7 +221,7 @@
 <section class="extra-sectionv position-relative fix section-padding">
     <div class="section-title text-center">
         <span class="sub-title wow fadeInUp p5-clr">
-            Testimoni Alumni
+            Alumni Testimonial
         </span>
         <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
             Discover Your Passion Pursue <br>Your Dreams
@@ -257,7 +255,7 @@
     </div>
 </section>
 
-<!-- Carft Section Start -->
+<!-- Kurikulum -->
 <section class="carft-section section-padding cmn-bg overflow-hidden position-relative">
     <div class="container">
         <div class="row flex-row-reverse align-items-md-center g-4">
@@ -265,7 +263,7 @@
                 <div class="carft-content">
                     <div class="section-title mb-30">
                         <span class="sub-title wow fadeInUp p2-clr">
-                            Craft
+                            Curriculum ( English )
                         </span>
                         <h3 class="m-title wow fadeInUp black" data-wow-delay=".3s">
                             Education is the key to success Knowledge is power
@@ -275,16 +273,16 @@
                         <div class="protfolio-tabs mb-30">
                             <ul class="tablinks">
                                 <li class="nav-links active">
-                                    <button class="tablink">1-4 year</button>
+                                    <button class="tablink">1-3 Grades </button>
                                 </li>
                                 <li class="nav-links">
-                                    <button class="tablink">5-7 year</button>
+                                    <button class="tablink">4-6 Grades</button>
                                 </li>
                                 <li class="nav-links">
-                                    <button class="tablink">8-12 year</button>
+                                    <button class="tablink">7-9 Grades</button>
                                 </li>
                                 <li class="nav-links">
-                                    <button class="tablink">13-15 year</button>
+                                    <button class="tablink">10-12</button>
                                 </li>
                             </ul>
                         </div>
@@ -292,25 +290,26 @@
                             <div class="tabitem active">
                                 <div class="cart-cont-box">
                                     <p class="pra mb-3">
-                                        Lorem ipsum dolor sit amet consectetur. Amet le ultricies dictum facilisis
-                                        sem.
-                                        Imperdiet massa turpis sit proin metus
-                                        volut.Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-                                        dictum facilisis
-                                        sem. Imperdiet massa
+                                        Our English language curriculum is specially designed to develop students'
+                                        academic skills from elementary to high school levels. With a structured and
+                                        enjoyable approach, we focus on:
                                     </p>
                                     <ul class="d-grid gap-xxl-2 gap-2">
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Nurturing Young Minds
+                                            Introduction to basic vocabulary (objects, numbers, colors, etc.)
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Unlocking Potential Through Education
+                                            Introduction to simple sentences (self-introduction, greetings, etc.)
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Empowering Children Through Education
+                                            Listening to and mimicking pronunciation of simple words
+                                        </li>
+                                        <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
+                                            <i class="fa-solid fa-check p3-clr"></i>
+                                            Reading and writing simple words
                                         </li>
                                     </ul>
                                 </div>
@@ -318,25 +317,26 @@
                             <div class="tabitem">
                                 <div class="cart-cont-box">
                                     <p class="pra mb-3">
-                                        Lorem ipsum dolor sit amet consectetur. Amet le ultricies dictum facilisis
-                                        sem.
-                                        Imperdiet massa turpis sit proin metus
-                                        volut.Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-                                        dictum facilisis
-                                        sem. Imperdiet massa
+                                        Students will learn basic vocabulary through literary text analysis. Our
+                                        curriculum not only focuses on increasing knowledge but also on developing
+                                        critical thinking and analytical skills.
                                     </p>
                                     <ul class="d-grid gap-xxl-2 gap-2">
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Nurturing Young Minds
+                                            Vocabulary development (verbs, adjectives, etc.)
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Unlocking Potential Through Education
+                                            Reading short stories and answering questions
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Empowering Children Through Education
+                                            Writing simple sentences and short paragraphs
+                                        </li>
+                                        <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
+                                            <i class="fa-solid fa-check p3-clr"></i>
+                                            Use of basic grammar (present tense, articles, pronouns)
                                         </li>
                                     </ul>
                                 </div>
@@ -344,25 +344,25 @@
                             <div class="tabitem">
                                 <div class="cart-cont-box">
                                     <p class="pra mb-3">
-                                        Lorem ipsum dolor sit amet consectetur. Amet le ultricies dictum facilisis
-                                        sem.
-                                        Imperdiet massa turpis sit proin metus
-                                        volut.Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-                                        dictum facilisis
-                                        sem. Imperdiet massa
+                                        Our curriculum for grades 7-9 aims to enrich students' vocabulary with idioms,
+                                        common expressions, and more. Students will engage in:
                                     </p>
                                     <ul class="d-grid gap-xxl-2 gap-2">
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Nurturing Young Minds
+                                            Enrichment of vocabulary (idioms, common expressions, etc.)
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Unlocking Potential Through Education
+                                            Reading and comprehending longer texts (articles, short stories, etc.)
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Empowering Children Through Education
+                                            Writing short essays and informal letters
+                                        </li>
+                                        <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
+                                            <i class="fa-solid fa-check p3-clr"></i>
+                                            Application of intermediate grammar (past tense, future tense, modal verbs)
                                         </li>
                                     </ul>
                                 </div>
@@ -370,25 +370,26 @@
                             <div class="tabitem">
                                 <div class="cart-cont-box">
                                     <p class="pra mb-3">
-                                        Lorem ipsum dolor sit amet consectetur. Amet le ultricies dictum facilisis
-                                        sem.
-                                        Imperdiet massa turpis sit proin metus
-                                        volut.Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
-                                        dictum facilisis
-                                        sem. Imperdiet massa
+                                        This curriculum is designed to refine language proficiency and critical thinking
+                                        abilities, preparing students for academic and professional challenges.
                                     </p>
                                     <ul class="d-grid gap-xxl-2 gap-2">
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Nurturing Young Minds
+                                            Analysis of literary and non-literary texts
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Unlocking Potential Through Education
+                                            Writing argumentative essays and reports
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Empowering Children Through Education
+                                            Developing speaking skills and presentations
+                                        </li>
+                                        <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
+                                            <i class="fa-solid fa-check p3-clr"></i>
+                                            Application of advanced grammar (conditional sentences, passive voice, complex
+                                        sentences)
                                         </li>
                                     </ul>
                                 </div>
@@ -399,13 +400,13 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-5">
                 <div class="carft-thumb p-sm-0 p-3 w-100 pe-lg-4 wow fadeInDown" data-wow-delay=".5s">
-                    <img src="{{ asset('assets2/img/ainspair/carft-thumb.png') }}" alt="img" class="w-100">
+                    <img src="{{ asset('assets2/img/aicon/imgggg.png') }}" alt="img" class="w-100">
                 </div>
             </div>
         </div>
     </div>
     <!-- Element-->
-    <img src="{{ asset('assets2/img/ainspair/carft-man.png') }}" alt="img" class="carft-man">
+    <img src="{{ asset('assets2/img/aicon/bard.png') }}" alt="img" class="carft-man">
 </section>
 
 <!-- Maps -->

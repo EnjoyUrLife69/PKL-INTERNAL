@@ -13,6 +13,7 @@
     <title>Ascent - Chindcare & Kids School HTML Template</title>
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
+    <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="{{ asset('assets2/css/bootstrap.min.css') }}">
     <!--<< All Min Css >>-->

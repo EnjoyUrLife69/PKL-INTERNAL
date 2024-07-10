@@ -58,8 +58,8 @@
                                         <div class="col-sm-9">
                                             <select class="form-control" name="id_kategori" id="putih"
                                                 id="exampleSelectGender">
-                                                 <option value="" selected >Pilih Kategori</option>
-            
+                                                <option value="" selected>Pilih Kategori</option>
+
                                                 @foreach ($kategori as $data)
                                                     <option value="{{ $data->id }}">{{ $data->nama_kategori }}
                                                     </option>

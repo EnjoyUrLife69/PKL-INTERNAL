@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kategori;
 use Illuminate\Http\Request;
-
+use Alert;
 class KategoriController extends Controller
 {
     /**
@@ -62,8 +62,8 @@ class KategoriController extends Controller
         $kategori = new Kategori;
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->save();
-
-        return redirect()->route('kategori.index')->with('success', 'Data berhasil ditambahkan');
+        toast('Data berhasil disimpan', 'success');  
+        return redirect()->route('kategori.index');
 
     }
 
@@ -105,8 +105,10 @@ class KategoriController extends Controller
         $kategori = Kategori::FindOrFail($id);
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->save();
-        return redirect()->route('kategori.index')
-            ->with('success', 'data berhasil di ubah');
+
+        toast('Data berhasil disimpan', 'success');
+        return redirect()->route('kategori.index');
+            
 
     }
 
@@ -120,8 +122,9 @@ class KategoriController extends Controller
     {
         $kategori = Kategori::FindOrFail($id);
         $kategori->delete();
-        return redirect()->route('kategori.index')
-            ->with('success', 'data berhasil dihapus');
+        toast('Data berhasil di hapus', 'success');
+        return redirect()->route('kategori.index');
+            
 
     }
 }

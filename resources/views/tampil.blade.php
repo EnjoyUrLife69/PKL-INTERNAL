@@ -10,6 +10,7 @@
     <meta name="description" content="Ascent - Kids Kindergarden School HTML Template">
     <!-- ======== Page title ============ -->
     <title>Ascent - Chindcare & Kids School HTML Template</title>
+    <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
     <!--<< Bootstrap min.css >>-->
@@ -118,9 +119,9 @@
                         </div>
                         <div class="text" style="margin-left: 30px;">
                             <p class="pre-pragraph" style="text-align: left">
-                                <b style="color: orange">BimbelKu</b> berkomitmen membantu siswa
-                                meraih prestasi terbaik dengan metode pengajaran inovatif
-                                dan tim pengajar berpengalaman.
+                                <b style="color: orange">BimbelKu</b> is committed to helping &nbsp;&nbsp; students achieve their
+                                 best performance with innovative teaching methods and an experienced team of
+                                 instructors.
                             </p>
                         </div><br>
                         <a href="{{ route('about') }}" class="theme-btn round100 p2-bg"

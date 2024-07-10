@@ -17,6 +17,9 @@
 </head>
 
 <body>
+
+    @include('sweetalert::alert')
+
     <div class="container-scroller">
         {{-- SIDEBAR --}}
         @include('include.backend.sidebar')

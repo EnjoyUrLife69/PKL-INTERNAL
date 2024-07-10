@@ -14,6 +14,7 @@
         rel="stylesheet">
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
+    <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="{{ asset('assets2/css/bootstrap.min.css') }}">
     <!--<< All Min Css >>-->
@@ -144,7 +145,7 @@
             <li><a href="{{ route('welcome') }}"><b>Home</b></a></li>
             <li><a href="{{ route('about') }}"><b>About Us</b></a></li>
             <li><a href="{{ route('blog') }}"><b>Blog</b></a></li>
-            <li><a href="{{ route('daftar') }}"><b>Daftar</b></a></li>
+            <li><a href="{{ route('daftar') }}"><b>Join Now</b></a></li>
         </ul>
     </nav>
     <div class="orange" id="scrollUp"></div>
@@ -154,19 +155,21 @@
         <div class="container" style="width: 90%; height: 100px; margin-right: auto; margin-left: auto;">
             <div class="row">
                 <div class="col-md-6 col-xl-5">
-                    <h3 style="color: rgb(0, 0, 0); font-size: 35px; margin-top: 20%;">
-                        Bimbingan Belajar
+                    <h3 style="color: rgb(0, 0, 0); font-size: 40px; margin-top: 20%;">
+                        Join <b style="color: rgb(255, 166, 0);">BimbelKu</b> Today
                     </h3><br>
-                    <p>
-                        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam ex nesciunt
-                            laboriosam praesentium eius itaque error. Porro, error voluptates!</b>
-                        <br><br>
-                        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam ex nesciunt
-                            laboriosam praesentium eius itaque error. Porro, error voluptates!</b>
+                    <p style="font-size: 20px; word-spacing: 5px">
+                        <b>Join <b style="color: rgb(255, 166, 0);">BimbelKu</b> now and embark on your
+                            journey towards academic success in English! With innovative teaching methods and
+                            experienced
+                            instructors, <br><br>
+
+                            we are here to help you achieve your learning goals. Register now and experience
+                            the difference!</b>
                     </p><br>
                     <a href="{{ route('daftar-form') }}">
                         <button class="button-37" style="color: black; font-family:">
-                            Daftar Sekarang
+                            Join Now
                         </button>
                     </a>
                 </div>
@@ -185,14 +188,18 @@
             <hr
                 style="border-radius: 8px; margin-top: 5px; margin-right: auto; margin-left: auto; border: none; height: 5px; width: 20%; background-color: #FFA500">
             <center>
-                <p style="margin-top: 40px;">BIMBELKU SEBAGAI LEMBAGA BIMBINGAN BELAJAR "TERPERCAYA"</p>
+                <p style="margin-top: 40px; font-size: 20px;">
+                    "<b style="color: rgb(255, 149, 0);">Bimbelku</b> as a <b
+                        style="color: rgb(255, 149, 0);">trusted</b> tutoring institution, specializing in teaching <b
+                        style="color: rgb(255, 149, 0);">English </b>."</p>
             </center><br><br>
             <div class="row">
                 <div class="col-md-6 col-xl-6">
-                    <h2 style="font-size: 40px;font-weight: 500">Peluang sukses besar! Ingin cepat pintar???</h2>
+                    <h2 style="font-size: 40px;font-weight: 500">" Want to Master English
+                        Quickly??? "
+                    </h2>
                     <hr style="width: 40% ; border: none; height: 2px; background-color: rgb(124, 123, 121)">
-                    <p style="color: rgb(139, 139, 139); margin-top: 35px">BIMBELKU SIAP MENCETAK SISWA-SISWI
-                        BERPRESTASI SESUAI KEBUTUHAN AKADEMIK</p>
+                    <p style="color: rgb(139, 139, 139); margin-top: 35px">"BIMBELKU IS PREPARED TO NURTURE HIGH-ACHIEVING STUDENTS ACCORDING TO ACADEMIC NEEDS."</p>
                 </div>
                 <div class="col-md-6 col-xl-6">
                     <div class="card"
@@ -211,11 +218,11 @@
                         style="background-color: #f19f65; height: 80px; border: none; width: 65%; margin-left: auto; border-radius: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);">
                         <div class="row">
                             <div class="col-md-6 col-xl-4">
-                                <img src="{{ asset('assets2/img/logo/math.svg') }}"
+                                <img src="{{ asset('assets2/img/logo/eng.svg') }}"
                                     style="width: 53%; margin-top: 13px; margin-left: 30px;">
                             </div>
                             <div class="col-md-6 col-xl-8">
-                                <h4 style="margin-top: 25px; margin-left: -10px;">Mathematics</h4>
+                                <h4 style="margin-top: 25px; margin-left: -10px;">English Laguage</h4>
                             </div>
                         </div>
                     </div>

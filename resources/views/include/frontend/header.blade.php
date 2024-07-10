@@ -26,7 +26,7 @@
                                         <a href="{{ route('blog') }}"> Blog </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('daftar') }}">Daftar</a>
+                                        <a href="{{ route('daftar') }}">Join Now</a>
                                     </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </ul>
                             </nav>

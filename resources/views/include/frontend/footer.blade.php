@@ -12,9 +12,9 @@
                          </div>
                          <div class="footer-content">
                              <p class="pre-pragraph" style="text-align: left">
-                                 <b style="color: orange">BimbelKu</b> berkomitmen membantu siswa
-                                 meraih prestasi terbaik dengan metode pengajaran inovatif
-                                 dan tim pengajar berpengalaman.
+                                 <b style="color: orange">BimbelKu</b> is committed to helping students achieve their
+                                 best performance with innovative teaching methods and an experienced team of
+                                 instructors.
                              </p>
                              <div class="social-wrapper d-flex align-items-center">
                                  <a href="#" class="white"><i class="white fab fa-facebook-f"></i></a>
@@ -50,12 +50,12 @@
                              </li>
                              <li>
                                  <a href="{{ route('blog') }}">
-                                     Blog
+                                     Blogs
                                  </a>
                              </li>
                              <li>
                                  <a href="{{ route('daftar') }}">
-                                     Daftar
+                                     Join Now
                                  </a>
                              </li>
                          </ul>

@@ -17,6 +17,7 @@ class PendaftarController extends Controller
     public function index()
     {
         $pendaftar = Pendaftar::all();
+        $pendaftar = Pendaftar::orderBy('id', 'desc')->get();
         return view('pendaftar.index', compact('pendaftar'));
     }
 
@@ -51,8 +52,6 @@ class PendaftarController extends Controller
 
         $pendaftar->save();
         Alert::success('Pendaftaran Berhasil', 'Terima kasih telah mendaftar di bimbingan belajar kami!');
-
-
         return redirect()->route('daftar-form');
 
 
@@ -101,8 +100,9 @@ class PendaftarController extends Controller
         $pendaftar->email = $request->email;
 
         $pendaftar->save();
+        toast('Data berhasil di update', 'success');
 
-        return redirect()->route('daftar')->with('success', 'Data berhasil Di Edit');
+        return redirect()->route('daftar');
 
     }
 
@@ -115,6 +115,8 @@ class PendaftarController extends Controller
     public function destroy(Pendaftar $pendaftar)
     {
         $pendaftar->delete();
-        return redirect()->route('pendaftar.index')->with('success', 'Data Berhasil Di Hapuss');
+        toast('Data berhasil di hapus', 'success');
+
+        return redirect()->route('pendaftar.index');
     }
 }
