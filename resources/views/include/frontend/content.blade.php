@@ -34,7 +34,7 @@
                         <br><br>
                         <a href="{{ route('daftar') }}" class="theme-btn round100 p2-bg">
                             <span class="white fw-medium" style="hight: 10px;">
-                                Daftar Sekarang
+                                Join Now
                             </span>
                         </a>
                 </div>

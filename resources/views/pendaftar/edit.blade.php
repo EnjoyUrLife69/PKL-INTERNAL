@@ -46,17 +46,17 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="jenisKelamin" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                                        <label for="jenisKelamin" class="col-sm-3 col-form-label">Gender</label>
                                         <div class="col-sm-9">
                                             <select class="form-control" id="jenisKelamin" name="jenis_kelamin"
                                                 required>
-                                                <option value="">Pilih Jenis Kelamin</option>
-                                                <option value="Laki-laki"
-                                                    {{ $pendaftar->jenis_kelamin == 'Laki-laki' ? 'selected' : '' }}>
-                                                    Laki-laki</option>
-                                                <option value="Perempuan"
-                                                    {{ $pendaftar->jenis_kelamin == 'Perempuan' ? 'selected' : '' }}>
-                                                    Perempuan</option>
+                                                <option value="">Gender Choose</option>
+                                                <option value="Male"
+                                                    {{ $pendaftar->jenis_kelamin == 'Male' ? 'selected' : '' }}>
+                                                    Male</option>
+                                                <option value="Female"
+                                                    {{ $pendaftar->jenis_kelamin == 'Female' ? 'selected' : '' }}>
+                                                    Female</option>
                                             </select>
                                             </select>
                                         </div>
@@ -69,25 +69,22 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">asal
-                                            sekolah</label>
+                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">School</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="putih"
                                                 name="asal_sekolah" value="{{ $pendaftar->asal_sekolah }}" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">No Hp
-                                            Siswa</label>
+                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Student Phone Number</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="putih"
                                                 name="nomor_telp_siswa" value="{{ $pendaftar->nomor_telp_siswa }}"
-                                                required>
+                                                >
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">No Hp Orang
-                                            Tua</label>
+                                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Parent Phone Number</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" id="putih"
                                                 name="nomor_telp_ortu" value="{{ $pendaftar->nomor_telp_ortu }}"

@@ -78,8 +78,8 @@
         </div><br>
         <div>
             <div class="container">
-                <h2 data-aos="fade-right">About Us</h2>
-                <div style="background-color: #fe832b; height: 5px; width: 20%; margin-top: 1.5px; border-radius: 5px;">
+                <h2 data-aos="fade-right" >About Us</h2>
+                <div data-aos="fade-right" style="background-color: #fe832b; height: 5px; width: 20%; margin-top: 1.5px; border-radius: 5px;">
                 </div><br>
                 <div data-aos="fade-right" data-aos-duration="1000" class="text">
                     <p style="font-size: 20px;">
@@ -93,7 +93,7 @@
                     </p>
                 </div><br>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <h2>Our Vision</h2>
                         <div class="text">
                             <div
@@ -103,7 +103,7 @@
                                 To be the leading English tutoring center that nurtures intelligent, high-achieving
                                 generations ready to face global challenges.<br><br>
                             </p>
-                            <center><img src="{{ asset('assets2/img/aicon/wow.png') }}" style="width: 500px; margin-right: 40px;"
+                            <center><img src="{{ asset('assets2/img/aicon/wow.png') }}" style="width: 500px; margin-right: 40px;" data-aos="fade-right"
                                     alt=""></center>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                         <br>
                         <div style="border-left: 4px solid #fe832b; height: 310px; border-radius: 1px;"></div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" data-aos="fade-left" data  >
                         <h2>Our Mission</h2>
                         <div
                             style="background-color: #fe832b; height: 5px; width: 50%; margin-top: 1.5px; border-radius: 5px;">
@@ -150,7 +150,7 @@
             <div class="container mt-5" style="width: 90%;">
                 <div class="row">
                     <div class="col-md-6" id="col0">
-                        <div class="card" id="cardi">
+                        <div class="card" id="cardi" data-aos="zoom-in" data-aos-duration="1000">
                             <center><img src="{{ asset('assets2/img/aicon/students.png') }}" style=" width: 100px"
                                     alt=""></center>
                             <div class="text" style="width: 90%; margin-left: auto; margin-right: auto;">
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <div class="col-md-6" style="display: flex; justify-content: center; flex-direction: row;">
-                        <div class="card" id="cardi">
+                        <div class="card" id="cardi" data-aos="zoom-in" data-aos-duration="1100">
                             <center><img src="{{ asset('assets2/img/aicon/teacher.png') }}" style=" width: 100px"
                                     alt=""></center>
                             <div class="text" style="width: 90%; margin-left: auto; margin-right: auto;">
@@ -177,7 +177,7 @@
                 <div class="row mt-5">
                     <div class="col-md-6" id="col0"
                         style="display: flex; justify-content: center; flex-direction: row;">
-                        <div class="card" id="cardi">
+                        <div class="card" id="cardi" data-aos="zoom-in" data-aos-duration="1200">
                             <center><img src="{{ asset('assets2/img/aicon/education.png') }}" style=" width: 100px" m
                                     alt=""></center>
                             <div class="text" style="width: 90%; margin-left: auto; margin-right: auto;">
@@ -190,7 +190,7 @@
                     </div>
                     <div class="col-md-6" id="col0"
                         style="display: flex; justify-content: center; flex-direction: row;">
-                        <div class="card" id="cardi">
+                        <div class="card" id="cardi" data-aos="zoom-in" data-aos-duration="1300">
                             <center><img src="{{ asset('assets2/img/aicon/blackboard.png') }}" style=" width: 100px"
                                     alt=""></center>
                             <div class="text" style="width: 90%; margin-left: auto; margin-right: auto;">

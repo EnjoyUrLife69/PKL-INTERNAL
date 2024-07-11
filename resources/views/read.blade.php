@@ -43,7 +43,7 @@
                                 <div class="card-body">
                                     <p>Sort by Category</p>
                                     <form method="GET" action="{{ route('read') }}">
-                                        <select class="form-control" name="id_kategori" id="putih"
+                                        <select class="form-control" name="id_kategori"                                                  id="putih"
                                             id="exampleSelectGender">
                                             <option value=""
                                                 {{ is_null(request()->get('id_kategori')) ? 'selected' : '' }}>

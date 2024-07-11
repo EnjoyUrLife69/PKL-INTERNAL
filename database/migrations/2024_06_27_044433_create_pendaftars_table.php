@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('jenis_kelamin');
             $table->string('kelas');
             $table->string('asal_sekolah');
-            $table->BigInteger('nomor_telp_siswa');
+            $table->BigInteger('nomor_telp_siswa')->nullable();
             $table->BigInteger('nomor_telp_ortu');
             $table->string('email');
             $table->timestamps();

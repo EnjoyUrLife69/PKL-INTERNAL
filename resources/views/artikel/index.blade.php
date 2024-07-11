@@ -35,16 +35,16 @@
                 <div class="content-wrapper">
                     {{-- FILTER --}}
                     <div class="row">
-                        <div class="col-md-6 col-xl-7 grid-margin stretch-card ml-auto" style="">
+                        <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 6%">Halaman Data Artikel
+                                    <p style="font-size: 30px; text-align: center; margin-top: 3%">Halaman Data Artikel
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-xl-5 grid-margin stretch-card ml-auto" style="">
+                        {{-- <div class="col-md-6 col-xl-5 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
                                     <p>Filter by Category</p>
@@ -65,7 +65,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     @if (session('success'))
                         <div class="alert alert-success" role="alert">

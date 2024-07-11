@@ -145,7 +145,7 @@
             touch-action: manipulation;
             margin-left: 30px;
             margin-top: -5%;
-            
+
         }
 
         .button-37:hover {
@@ -259,9 +259,8 @@
 
     <section>
         <div class="info">
-            <h4>INFORMASI</h4>
-            <p>Apabila anda sudah melakukan pendaftaran , silahkan untuk mengecek email anda untuk informasi lebih
-                lanjut</p>
+            <h4>INFORMATION</h4>
+            <p>If you have already registered, please check your email for further information</p>
             <a href="{{ route('daftar') }}">
                 <button class="button-37" style="color: black; font-family:">
                     Kembali Ke Home
@@ -272,29 +271,32 @@
 
     <section>
         <div class="form-daftar">
-            <h4>Formulir Pendaftaran</h4>
+            <h4>REGISTRATION FORM</h4>
             <div class="container">
                 <form action="{{ route('pendaftar.store') }}" method="post"
                     role="form"enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Nama Lengkap</b><b style="color: red;">*</b></label>
-                        <input type="text" id="judulArtikel" name="nama" placeholder="Nama Lengkap" required
+                        <label for="judulArtikel"><b style="color: black;">Fullname</b><b
+                                style="color: red;">*</b></label>
+                        <input type="text" id="judulArtikel" name="nama" placeholder="Fullname" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="jenisKelamin"><b style="color: black;">Jenis Kelamin</b><b style="color: red;">*</b></label>
+                        <label for="jenisKelamin"><b style="color: black;">Gender</b><b
+                                style="color: red;">*</b></label>
                         <select id="jenisKelamin" name="jenis_kelamin" required
                             style="color: black; padding-left: 10px;">
-                            <option value="">Pilih Jenis Kelamin</option>
-                            <option value="Laki-laki">Laki-laki</option>
-                            <option value="Perempuan">Perempuan</option>
+                            <option value="">Choose Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="jenisKelamin"><b style="color: black;">Kelas</b><b style="color: red;">*</b></label>
+                        <label for="jenisKelamin"><b style="color: black;">Grades</b><b
+                                style="color: red;">*</b></label>
                         <select id="jenisKelamin" name="kelas" required style="color: black; padding-left: 10px;">
-                            <option style="color: gray;" value="">Pilih Kelas</option>
+                            <option style="color: gray;" value="">What Grade are you in</option>
                             <option value="5 (SD)">5 (SD)</option>
                             <option value="6 (SD)">6 (SD)</option>
                             <option value="7 (SMP)">7 (SMP)</option>
@@ -306,28 +308,32 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Asal Sekolah</b><b style="color: red;">*</b></label>
-                        <input type="text" id="judulArtikel" name="asal_sekolah" placeholder="Asal Sekolah" required
+                        <label for="judulArtikel"><b style="color: black;">School</b><b
+                                style="color: red;">*</b></label>
+                        <input type="text" id="judulArtikel" name="asal_sekolah"
+                            placeholder="Which School are you in" required style="color: black; padding-left: 10px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="judulArtikel"><b style="color: black;">Student's Phone Number</b><b
+                                style="color: red;">*</b></label>
+                        <input type="text" id="judulArtikel" name="nomor_telp_siswa" placeholder="+ 62"
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">No Telp Siswa</b><b style="color: red;">*</b></label>
-                        <input type="text" id="judulArtikel" name="nomor_telp_siswa" placeholder="+ 62" required
-                            style="color: black; padding-left: 10px;">
-                    </div>
-                    <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">No Telp Orang Tua</b><b style="color: red;">*</b></label>
+                        <label for="judulArtikel"><b style="color: black;">Parent's Phone Number</b></label>
                         <input type="text" id="judulArtikel" name="nomor_telp_ortu" placeholder="+ 62" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group">
-                        <label for="judulArtikel"><b style="color: black;">Email</b><b style="color: red;">*</b></label>
+                        <label for="judulArtikel"><b style="color: black;">Email</b><b
+                                style="color: red;">*</b></label>
                         <input type="email" id="judulArtikel" name="email" placeholder="Email" required
                             style="color: black; padding-left: 10px;">
                     </div>
                     <div class="form-group row" style="margin-left: 66%;">
                         <div class="col-sm-6">
-                            <button type="reset" class="button-38 btn btn-secondary" style="color: black; margin-left: 40%;">
+                            <button type="reset" class="button-38 btn btn-secondary"
+                                style="color: black; margin-left: 40%;">
                                 RESET
                             </button>
                         </div>
@@ -343,6 +349,16 @@
     </section>
 
     <br><br><br><br><br>
+    {{-- <script>
+        Swal.fire({
+            title: 'Registration Successful',
+            html: '<b>Thank you for registering with our tutoring center!</b><br>We will contact you soon via email or phone for the payment details.</a>',
+            icon: 'success',
+            showConfirmButton: true,
+            confirmButtonText: 'OK',
+            allowOutsideClick: false
+        });
+    </script> --}}
 </body>
 
 </html>

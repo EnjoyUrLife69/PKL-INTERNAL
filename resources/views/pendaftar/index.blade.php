@@ -65,19 +65,19 @@
                                                             <h5>No</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Nama Murid</h5>
+                                                            <h5>Fullname</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Jenis Kelamin</h5>
+                                                            <h5>Gender</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>kelas</h5>
+                                                            <h5>Grade</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Asal Sekolah</h5>
+                                                            <h5>School</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>No Telp Ortu</h5>
+                                                            <h5>Parents Number</h5>
                                                         </b></th>
                                                     <th><b>
                                                             <h5>Action</h5>
@@ -93,7 +93,7 @@
                                                         <td>{{ $data->jenis_kelamin }}</td>
                                                         <td>{{ $data->kelas }}</td>
                                                         <td>{{ Str::limit($data->asal_sekolah, 10) }}</td>
-                                                        <td>{{ $data->nomor_telp_ortu }}</td>
+                                                        <td>+62 {{ $data->nomor_telp_ortu }}</td>
                                                         <form action="{{ route('pendaftar.destroy', $data->id) }}"
                                                             method="POST">
                                                             @csrf

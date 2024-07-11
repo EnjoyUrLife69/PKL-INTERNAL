@@ -6,7 +6,6 @@ use App\Models\Pendaftar;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
-
 class PendaftarController extends Controller
 {
     /**
@@ -46,14 +45,32 @@ class PendaftarController extends Controller
         $pendaftar->jenis_kelamin = $request->jenis_kelamin;
         $pendaftar->kelas = $request->kelas;
         $pendaftar->asal_sekolah = $request->asal_sekolah;
-        $pendaftar->nomor_telp_siswa = $request->nomor_telp_siswa;
+        $pendaftar->nomor_telp_siswa = $request->input('nomor_telp_siswa', null);
         $pendaftar->nomor_telp_ortu = $request->nomor_telp_ortu;
         $pendaftar->email = $request->email;
 
         $pendaftar->save();
-        Alert::success('Pendaftaran Berhasil', 'Terima kasih telah mendaftar di bimbingan belajar kami!');
-        return redirect()->route('daftar-form');
 
+        // Buat HTML untuk tampilan SweetAlert
+        $htmlContent = '<table style="width: 100%; text-align: left;">';
+        $htmlContent .= '<tr><td><strong>Fullname</strong></td><td>:</td><td>' . htmlspecialchars($request->nama) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>Gender</strong></td><td>:</td><td>' . htmlspecialchars($request->jenis_kelamin) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>Grades</strong></td><td>:</td><td>' . htmlspecialchars($request->kelas) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>From School</strong></td><td>:</td><td>' . htmlspecialchars($request->asal_sekolah) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>Student Phone Number</strong></td><td>:</td><td>' . htmlspecialchars($request->nomor_telp_siswa) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>Parent Phone Number</strong></td><td>:</td><td>' . htmlspecialchars($request->nomor_telp_ortu) . '</td></tr>';
+        $htmlContent .= '<tr><td><strong>Email</strong></td><td>:</td><td>' . htmlspecialchars($request->email) . '</td></tr>';
+        $htmlContent .= '</table> <br>';
+        $htmlContent .= 'We will contact you soon via <b> email </b> or <b> phone </b> for the payment details.';
+
+
+        Alert::html(
+            'Registration Successful',
+            '<b>Thank you for registering with our tutoring center!</b><br><br>' . $htmlContent,
+            'success'
+        )->persistent(true, true);
+
+        return redirect()->route('daftar-form');
 
     }
 
@@ -95,14 +112,14 @@ class PendaftarController extends Controller
         $pendaftar->jenis_kelamin = $request->jenis_kelamin;
         $pendaftar->kelas = $request->kelas;
         $pendaftar->asal_sekolah = $request->asal_sekolah;
-        $pendaftar->nomor_telp_siswa = $request->nomor_telp_siswa;
+        $pendaftar->nomor_telp_siswa = $request->input('nomor_telp_siswa', null);
         $pendaftar->nomor_telp_ortu = $request->nomor_telp_ortu;
         $pendaftar->email = $request->email;
 
         $pendaftar->save();
         toast('Data berhasil di update', 'success');
 
-        return redirect()->route('daftar');
+        return redirect()->route('pendaftar.index');
 
     }
 
