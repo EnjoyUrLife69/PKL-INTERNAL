@@ -9,7 +9,7 @@
     <meta name="author" content="mugli">
     <meta name="description" content="Ascent - Kids Kindergarden School HTML Template">
     <!-- ======== Page title ============ -->
-    <title>Ascent - Chindcare & Kids School HTML Template</title>
+    <title>Read Blogs</title>
     <link rel="icon" href="{{ asset('assets2/img/logo/logo-web.svg') }}">
     <!--<< Favcion >>-->
     <link rel="shortcut icon" href="{{ asset('assets2/img/faveicon.png') }}">
