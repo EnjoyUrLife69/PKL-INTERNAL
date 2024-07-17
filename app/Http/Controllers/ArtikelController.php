@@ -84,7 +84,7 @@ class ArtikelController extends Controller
         $artikel->isi = $request->isi;
 
         $artikel->save();
-        toast('Data berhasil disimpan', 'success');
+        toast('New entry has been saved', 'success');
 
         return redirect()->route('artikel.index');
 
@@ -151,7 +151,7 @@ class ArtikelController extends Controller
         $artikel->isi = $request->isi;
 
         $artikel->save();
-        toast('Data berhasil di update', 'success');
+        toast('Data updated successfully', 'success');
 
 
         return redirect()->route('artikel.index');
@@ -169,7 +169,7 @@ class ArtikelController extends Controller
         $artikel = Artikel::FindOrFail($id);
         $artikel->delete();
         
-        toast('Data berhasil disimpan', 'success');
+        toast('Record removed successfully', 'success');
         return redirect()->route('artikel.index');
 
     }

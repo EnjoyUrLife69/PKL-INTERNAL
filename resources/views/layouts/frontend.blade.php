@@ -86,7 +86,7 @@
             transform: translateX(-100%);
         }
 
-        .carousel .button {
+        .carousel-container .button {
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -99,7 +99,7 @@
             border-radius: 5px;
         }
 
-        .carousel .arrow {
+        .carousel-container .arrow {
             position: absolute;
             top: 50%;
             width: 40px;
@@ -113,12 +113,12 @@
             z-index: 1;
         }
 
-        .carousel .arrow.left {
-            left: 5px;
+        .carousel-container .arrow.left {
+            left: 50px;
         }
 
-        .carousel .arrow.right {
-            right: 5px;
+        .carousel-container .arrow.right {
+            right: 50px;
         }
     </style>
     {{-- slider --}}

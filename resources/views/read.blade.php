@@ -47,7 +47,7 @@
                                             id="exampleSelectGender">
                                             <option value=""
                                                 {{ is_null(request()->get('id_kategori')) ? 'selected' : '' }}>
-                                                Tampilkan Semua Artikel</option>
+                                                Show all Article</option>
                                             @foreach ($kategori as $data)
                                                 <option value="{{ $data->id }}"
                                                     {{ request()->get('id_kategori') == $data->id ? 'selected' : '' }}>
@@ -55,7 +55,7 @@
                                                 </option>
                                             @endforeach
                                         </select>
-                                        <button type="submit" class="btn btn-primary mt-3">Go</button>
+                                        <button type="submit" class="btn btn-primary mt-3">Search</button>
                                     </form>
                                 </div>
                             </div>

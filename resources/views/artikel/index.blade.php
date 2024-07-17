@@ -38,7 +38,7 @@
                         <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 3%">Halaman Data Artikel
+                                    <p style="font-size: 30px; text-align: center; margin-top: 3%">Article Data Page
                                     </p>
                                 </div>
                             </div>
@@ -73,14 +73,14 @@
                         </div>
                     @endif
                     @if ($artikel->isEmpty())
-                        <p style="font-size: 20px; text-align: center;">Tidak ada Artikel untuk Kategori ini.</p>
+                        <p style="font-size: 20px; text-align: center;">There are no articles for this category.</p>
                     @else
                         <div class="row">
                             <div class="col-lg-12 grid-margin stretch-card">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <h4 class="card-title">Tabel Artikel</h4>
+                                            <h4 class="card-title">Article Data</h4>
                                             <a href="{{ route('artikel.create') }}" class="btn btn-primary">+ Add
                                                 Data</a>
                                         </div>
@@ -92,13 +92,13 @@
                                                                 <h5>No</h5>
                                                             </b></th>
                                                         <th><b>
-                                                                <h5>Judul Artikel</h5>
+                                                                <h5>Tittle</h5>
                                                             </b></th>
                                                         <th><b>
-                                                                <h5>Tanggal Publikasi</h5>
+                                                                <h5>Publication Date</h5>
                                                             </b></th>
                                                         <th><b>
-                                                                <h5>Kategori</h5>
+                                                                <h5>Category</h5>
                                                             </b></th>
                                                         <th><b>
                                                                 <h5>Cover</h5>
@@ -113,7 +113,7 @@
                                                     @foreach ($artikel as $data)
                                                         <tr class="odd gradeX">
                                                             <td>{{ $no++ }}</td>
-                                                            <td>{{ $data->judul }}</td>
+                                                            <td>{{ Str::limit($data->judul, 25) }}</td>
                                                             <td>{{ $data->formatted_tanggal }}</td>
                                                             <td>{{ $data->kategori->nama_kategori }}</td>
                                                             <td>

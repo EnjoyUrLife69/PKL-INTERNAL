@@ -39,9 +39,9 @@
                         </a>
                 </div>
             </div>
-            <button class="arrow left" onclick="changeSlide(-1)">&#9664;</button>
-            <button class="arrow right" onclick="changeSlide(1)">&#9654;</button>
         </div>
+        <button class="arrow left" onclick="changeSlide(-1)">&#9664;</button>
+        <button class="arrow right" onclick="changeSlide(1)">&#9654;</button>
     </div>
     <img src="{{ asset('assets2/img/abanner/banner-shadow.png') }}" alt="img" class="banner-shadow">
 </section>
@@ -388,8 +388,9 @@
                                         </li>
                                         <li class="d-flex align-items-center gap-xxl-3 gap-2 pra">
                                             <i class="fa-solid fa-check p3-clr"></i>
-                                            Application of advanced grammar (conditional sentences, passive voice, complex
-                                        sentences)
+                                            Application of advanced grammar (conditional sentences, passive voice,
+                                            complex
+                                            sentences)
                                         </li>
                                     </ul>
                                 </div>
@@ -424,7 +425,7 @@
             <div class="col-xl-3">
                 <div class="stay-cont">
                     <h3>Visit Us</h3>
-                    <hr style="width: 45%;height: 5px; background-color: rgb(0, 0, 0);">
+                    <hr style="width: 45%;height: 5px; background-color: orange;">
                     <p class="pra">You can know more about us by visiting this address </p><br><br>
                     <div class="row">
                         <div class="col-xl-3">

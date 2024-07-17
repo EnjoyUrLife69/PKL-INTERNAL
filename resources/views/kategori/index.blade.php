@@ -36,7 +36,7 @@
                         <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Halaman Data Kategori
+                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Category Data Page
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Tabel Kategori</h4>
+                                        <h4 class="card-title">Category Data</h4>
                                         <a href="{{ route('kategori.create') }}" class="btn btn-primary">+ Add Data</a>
                                     </div>
                                     <div class="table-responsive">
@@ -63,7 +63,7 @@
                                                             <h5>No</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Nama Kategori</h5>
+                                                            <h5>Category Name</h5>
                                                         </b></th>
                                                     <th><b>
                                                             <h5>Action</h5>

@@ -54,7 +54,7 @@
 
         $formattedDate = Carbon::parse($artikel->tanggal)->translatedFormat('d F Y');
     @endphp
-    <div id="scrollUp">.</div>
+    <div id="scrollUp" style="color: #FFF0E5;">.</div>
     {{-- Header --}}
     @include('include.frontend.header')
     {{-- Header End --}}

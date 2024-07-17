@@ -117,7 +117,7 @@ class PendaftarController extends Controller
         $pendaftar->email = $request->email;
 
         $pendaftar->save();
-        toast('Data berhasil di update', 'success');
+        toast('Data updated successfully', 'success');
 
         return redirect()->route('pendaftar.index');
 
@@ -132,7 +132,7 @@ class PendaftarController extends Controller
     public function destroy(Pendaftar $pendaftar)
     {
         $pendaftar->delete();
-        toast('Data berhasil di hapus', 'success');
+        toast('Record removed successfully', 'success');
 
         return redirect()->route('pendaftar.index');
     }

@@ -36,7 +36,7 @@
                         <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Halaman Data Testimoni
+                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Testimonial Data Page
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Tabel Testimoni</h4>
+                                        <h4 class="card-title">Testimonial Data</h4>
                                         <a href="{{ route('testimoni.create') }}" class="btn btn-primary">+ Add Data</a>
                                     </div>
                                     <div class="table-responsive">
@@ -63,13 +63,13 @@
                                                             <h5>No</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Nama</h5>
+                                                            <h5>Name</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Pencapaian</h5>
+                                                            <h5>Achievement</h5>
                                                         </b></th>
                                                     <th><b>
-                                                            <h5>Pesan & Kesan</h5>
+                                                            <h5>Messages & Impressions</h5>
                                                         </b></th>
                                                     <th><b>
                                                             <h5>Photo</h5>
@@ -86,7 +86,7 @@
                                                         <td>{{ $no++ }}</td>
                                                         <td>{{ $data->nama }}</td>
                                                         <td>{{ $data->jabatan }}</td>
-                                                        <td>{{ Str::limit($data->pesan, 50) }}</td>
+                                                        <td>{{ Str::limit($data->pesan, 20) }}</td>
                                                         <td>
                                                             <img src="{{asset('images/testimoni/' . $data->cover) }}" width="100">    
                                                         </td>

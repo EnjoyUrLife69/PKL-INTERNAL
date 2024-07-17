@@ -31,7 +31,7 @@
                     <div class="col-md-12 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Edit Data Artikel</h4>
+                                <h4 class="card-title">Edit Data Pendaftar</h4>
                                 <p class="card-description"> Masukkan data Pendaftar yang ingin anda tambahkan </p>
                                 <form class="forms-sample" action="{{ route('pendaftar.update', $pendaftar->id) }}"
                                     method="post" role="form" enctype="multipart/form-data">

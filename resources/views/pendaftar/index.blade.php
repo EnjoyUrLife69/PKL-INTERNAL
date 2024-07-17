@@ -38,8 +38,7 @@
                         <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 3%">Halaman Data
-                                        Pendaftar
+                                    <p style="font-size: 30px; text-align: center; margin-top: 3%">Registrant Data Page
                                     </p>
                                 </div>
                             </div>
@@ -55,7 +54,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <h4 class="card-title">Tabel Pendaftar</h4>
+                                        <h4 class="card-title">Registrant Data</h4>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table" id="example">

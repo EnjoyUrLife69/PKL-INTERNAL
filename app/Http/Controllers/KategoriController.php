@@ -62,7 +62,7 @@ class KategoriController extends Controller
         $kategori = new Kategori;
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->save();
-        toast('Data berhasil disimpan', 'success');  
+        toast('New entry has been saved', 'success');  
         return redirect()->route('kategori.index');
 
     }
@@ -106,7 +106,7 @@ class KategoriController extends Controller
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->save();
 
-        toast('Data berhasil disimpan', 'success');
+        toast('Data updated successfully', 'success');
         return redirect()->route('kategori.index');
             
 
@@ -122,7 +122,7 @@ class KategoriController extends Controller
     {
         $kategori = Kategori::FindOrFail($id);
         $kategori->delete();
-        toast('Data berhasil di hapus', 'success');
+        toast('Record removed successfully', 'success');
         return redirect()->route('kategori.index');
             
 

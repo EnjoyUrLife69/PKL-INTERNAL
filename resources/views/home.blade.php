@@ -31,8 +31,7 @@
                         <div class="col-md-6 col-xl-12 grid-margin stretch-card ml-auto" style="">
                             <div class="card">
                                 <div class="card-body">
-                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Selamat Datang di
-                                        Dashboard Admin</p>
+                                    <p style="font-size: 30px; text-align: center; margin-top: 2%">Welcome to the Admin Dashboard</p>
                                 </div>
                             </div>
                         </div>
@@ -42,13 +41,13 @@
                         <div class="col-sm-4 grid-margin">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5>Testimoni</h5>
+                                    <h5>Testimonial</h5>
                                     <div class="row">
                                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                             <div class="d-flex d-sm-block d-md-flex align-items-center">
                                                 <h2 class="mb-0">{{$total_testimoni}}</h2>
                                             </div>
-                                            <h6 class="text-muted font-weight-normal">Total Testimoni Dari Alumni</h6>
+                                            <h6 class="text-muted font-weight-normal">Total Testimonials From Alumni</h6>
                                         </div>
                                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                             <i class="icon-lg mdi mdi-account-star text-primary ml-auto"></i>
@@ -60,13 +59,13 @@
                         <div class="col-sm-4 grid-margin">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5>Artikel</h5>
+                                    <h5>Article's</h5>
                                     <div class="row">
                                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                             <div class="d-flex d-sm-block d-md-flex align-items-center">
                                                 <h2 class="mb-0">{{$total_artikel}}</h2>
                                             </div>
-                                            <h6 class="text-muted font-weight-normal">Total Artikel yang ditambahkan</h6>
+                                            <h6 class="text-muted font-weight-normal">Total articles added</h6>
                                         </div>
                                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                             <i class="icon-lg mdi mdi-book-open-page-variant text-primary ml-auto"></i>
@@ -78,13 +77,13 @@
                         <div class="col-sm-4 grid-margin">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5>Kategori Artikel</h5>
+                                    <h5>Category for Article</h5>
                                     <div class="row">
                                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                             <div class="d-flex d-sm-block d-md-flex align-items-center">
                                                 <h2 class="mb-0">{{$total_kategori}}</h2>
                                             </div>
-                                            <h6 class="text-muted font-weight-normal">Jumlah Total data Kategori Artikel</h6>
+                                            <h6 class="text-muted font-weight-normal">Total number of Article Category data</h6>
                                         </div>
                                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                             <i class="icon-lg mdi mdi-book-multiple text-primary ml-auto"></i>
@@ -96,13 +95,13 @@
                         <div class="col-sm-8 grid-margin" style="align-items: center">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5>Pendaftar</h5>
+                                    <h5>Registrant</h5>
                                     <div class="row">
                                         <div class="col-8 col-sm-12 col-xl-8 my-auto">
                                             <div class="d-flex d-sm-block d-md-flex align-items-center">
                                                 <h2 class="mb-0">{{$total_pendaftar}}</h2>
                                             </div>
-                                            <h6 class="text-muted font-weight-normal">Jumlah Total Pendaftar Ke Bimbel Ini</h6>
+                                            <h6 class="text-muted font-weight-normal">Total number of registrants for this Bimbel</h6>
                                         </div>
                                         <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                                             <i class="icon-lg mdi mdi-face text-primary ml-auto"></i>

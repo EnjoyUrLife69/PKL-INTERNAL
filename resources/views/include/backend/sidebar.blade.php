@@ -33,7 +33,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-face"></i>
                 </span>
-                <span class="menu-title">Pendaftar</span>
+                <span class="menu-title">Registrant</span>
             </a>
         </li>
         <li class="nav-item menu-items">
@@ -46,10 +46,10 @@
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('artikel.index') }}">Artikel</a>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('artikel.index') }}">Blogs</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('kategori.index') }}">Kategori</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('testimoni.index') }}">Testimoni </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('kategori.index') }}">Category</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('testimoni.index') }}">Testimonial </a></li>
                 </ul>
             </div>
         </li>
@@ -59,7 +59,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-arrow-top-left"></i>
                 </span>
-                <span class="menu-title">Pergi ke Tampilan User</span>
+                <span class="menu-title">Go to User Page</span>
             </a>
         </li>
     </ul>
