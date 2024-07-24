@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use App\Models\Kategori;
 use Carbon\Carbon;
-Carbon::setLocale('id');
 
 use Illuminate\Http\Request;
 
